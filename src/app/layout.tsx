@@ -44,6 +44,11 @@ export const metadata: Metadata = {
   classification: "Business technology services",
   referrer: "origin-when-cross-origin",
   formatDetection: { telephone: false, email: false, address: false },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   manifest: "/manifest.webmanifest",
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
@@ -76,7 +81,7 @@ const knowledgeGraph = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: SITE_URL,
-      logo: absoluteUrl("/favicon.ico"),
+      logo: absoluteUrl("/icon.svg"),
       description: DEFAULT_DESCRIPTION,
       areaServed: STRUCTURED_SERVICE_AREAS,
       knowsAbout: [
