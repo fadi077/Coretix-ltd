@@ -1,2 +1,28 @@
 import type { MetadataRoute } from "next";
-export default function robots():MetadataRoute.Robots{const base=process.env.NEXT_PUBLIC_SITE_URL??"http://localhost:3000";return{rules:{userAgent:"*",allow:"/"},sitemap:`${base}/sitemap.xml`}}
+import { SITE_URL } from "./seo";
+
+const aiCrawlers = [
+  "OAI-SearchBot",
+  "GPTBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "Claude-User",
+  "Google-Extended",
+  "PerplexityBot",
+  "Perplexity-User",
+];
+
+export default function robots(): MetadataRoute.Robots {
+  if (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production") {
+    return { rules: { userAgent: "*", disallow: "/" } };
+  }
+
+  return {
+    rules: [
+      { userAgent: "*", allow: "/" },
+      ...aiCrawlers.map((userAgent) => ({ userAgent, allow: "/" })),
+    ],
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
+  };
+}

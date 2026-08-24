@@ -2,14 +2,64 @@ import type { MetadataRoute } from "next";
 import { industries } from "./industries/industry-data";
 import { services } from "./services/service-data";
 import { insights } from "./insights/insight-data";
+import { absoluteUrl } from "./seo";
 
-export default function sitemap():MetadataRoute.Sitemap{
-  const base=process.env.NEXT_PUBLIC_SITE_URL??"http://localhost:3000";
-  const staticRoutes=["","/about","/contact","/industries","/services","/insights"];
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date("2026-08-24T00:00:00.000Z");
+  const staticRoutes = [
+    {
+      path: "",
+      priority: 1,
+      images: [
+        "/images/homepage/hero-team.jpg",
+        "/images/homepage/trust-workplace.webp",
+      ],
+    },
+    { path: "/about", priority: 0.8, images: ["/images/about/about-team.png"] },
+    {
+      path: "/contact",
+      priority: 0.8,
+      images: ["/images/contact/contact-consultation.png"],
+    },
+    {
+      path: "/industries",
+      priority: 0.9,
+      images: ["/images/industries/industry-office.webp"],
+    },
+    { path: "/services", priority: 0.9, images: [] },
+    {
+      path: "/insights",
+      priority: 0.8,
+      images: ["/images/insights/support-transition.jpg"],
+    },
+  ];
   return [
-    ...staticRoutes.map(path=>({url:`${base}${path}`,changeFrequency:"monthly" as const,priority:path===""?1:(path==="/services"||path==="/industries") ? .9:.7})),
-    ...services.map(service=>({url:`${base}/services/${service.slug}`,changeFrequency:"monthly" as const,priority:.8})),
-    ...industries.map(industry=>({url:`${base}/industries/${industry.slug}`,changeFrequency:"monthly" as const,priority:.7})),
-    ...insights.map(insight=>({url:`${base}/insights/${insight.slug}`,changeFrequency:"monthly" as const,priority:.7})),
+    ...staticRoutes.map(({ path, priority, images }) => ({
+      url: absoluteUrl(path || "/"),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority,
+      images: images.map(absoluteUrl),
+    })),
+    ...services.map((service) => ({
+      url: absoluteUrl(`/services/${service.slug}`),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...industries.map((industry) => ({
+      url: absoluteUrl(`/industries/${industry.slug}`),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      images: [absoluteUrl(industry.image)],
+    })),
+    ...insights.map((insight) => ({
+      url: absoluteUrl(`/insights/${insight.slug}`),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      images: [absoluteUrl(insight.image)],
+    })),
   ];
 }

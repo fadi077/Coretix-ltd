@@ -4,7 +4,123 @@ import { SiteHeader } from "../interactions";
 import { ResponsiveImage } from "../media";
 import { SiteFooter } from "../site-footer";
 import { insights } from "./insight-data";
+import { createPageMetadata } from "../seo";
 
-export const metadata:Metadata={title:"IT Insights & Practical Guidance | HP Techs",description:"Practical guidance for UK organisations planning IT support changes, cybersecurity reviews, cloud migrations and better technology decisions.",alternates:{canonical:"/insights"},openGraph:{title:"IT Insights & Practical Guidance | HP Techs",description:"Straightforward guidance for better technology decisions.",url:"/insights",type:"website"}};
+export const metadata: Metadata = createPageMetadata({
+  title: "IT Insights & Practical Guidance | HP Techs",
+  description:
+    "Practical guidance for UK organisations planning IT support changes, cybersecurity reviews, cloud migrations and better technology decisions.",
+  path: "/insights",
+  image: "/images/insights/support-transition.jpg",
+  imageAlt: "Technology support colleagues assessing a shared workstation",
+});
 
-export default function InsightsPage(){return <><a className="skip-link" href="#main">Skip to main content</a><SiteHeader/><main id="main"><section className="insight-index-hero"><div className="container insight-index-heading"><div><p className="eyebrow">HP Techs insights</p><h1>Straightforward guidance for <span>better technology decisions.</span></h1></div><p>Planning notes for leaders and operational teams who need to understand the decision—not decode unnecessary technical language.</p></div></section><section className="insight-index section"><div className="container"><div className="insight-feature-grid">{insights.map((insight,index)=><article className={`insight-feature ${index===0?"featured":""}`} key={insight.slug}><Link href={`/insights/${insight.slug}`} className="insight-feature-image"><ResponsiveImage src={insight.image} alt={insight.alt} className="insight-index-photo" sizes={index===0?"(max-width: 900px) 100vw, 58vw":"(max-width: 900px) 100vw, 38vw"}/></Link><div><p>{insight.category} · Guidance</p><h2><Link href={`/insights/${insight.slug}`}>{insight.title}</Link></h2><span>{insight.readingTime}</span><Link className="insight-read" href={`/insights/${insight.slug}`}>Read article <i aria-hidden="true">↗</i></Link></div></article>)}</div></div></section><section className="insight-topic-band"><div className="container"><p className="eyebrow green">Topics we cover</p><div>{["Managed support","Cloud change","Cybersecurity","Infrastructure","Operational resilience","Technology planning"].map(topic=><span key={topic}>{topic}</span>)}</div></div></section><section className="final-cta"><div className="container cta-grid"><div><p className="eyebrow green">Need advice specific to your environment?</p><h2>Turn the guidance into a practical next step.</h2></div><div><p>Tell us what you are planning or what is getting in the way.</p><div className="actions"><Link className="button light" href="/contact#enquiry-form">Start a conversation <span aria-hidden="true">↗</span></Link></div></div></div></section></main><SiteFooter/></>}
+export default function InsightsPage() {
+  return (
+    <>
+      <a className="skip-link" href="#main">
+        Skip to main content
+      </a>
+      <SiteHeader />
+      <main id="main">
+        <section className="insight-index-hero">
+          <div className="container insight-index-heading">
+            <div>
+              <p className="eyebrow">HP Techs insights</p>
+              <h1>
+                Straightforward guidance for{" "}
+                <span>better technology decisions.</span>
+              </h1>
+            </div>
+            <p>
+              Planning notes for leaders and operational teams who need to
+              understand the decision without decoding unnecessary technical
+              language.
+            </p>
+          </div>
+        </section>
+        <section className="insight-index section">
+          <div className="container">
+            <div className="insight-feature-grid">
+              {insights.map((insight, index) => (
+                <article
+                  className={`insight-feature ${index === 0 ? "featured" : ""}`}
+                  key={insight.slug}
+                >
+                  <Link
+                    href={`/insights/${insight.slug}`}
+                    className="insight-feature-image"
+                  >
+                    <ResponsiveImage
+                      src={insight.image}
+                      alt={insight.alt}
+                      className="insight-index-photo"
+                      sizes={
+                        index === 0
+                          ? "(max-width: 900px) 100vw, 58vw"
+                          : "(max-width: 900px) 100vw, 38vw"
+                      }
+                    />
+                  </Link>
+                  <div>
+                    <p>{insight.category} · Guidance</p>
+                    <h2>
+                      <Link href={`/insights/${insight.slug}`}>
+                        {insight.title}
+                      </Link>
+                    </h2>
+                    <span>{insight.readingTime}</span>
+                    <Link
+                      className="insight-read"
+                      href={`/insights/${insight.slug}`}
+                    >
+                      Read article <i aria-hidden="true">↗</i>
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="insight-topic-band">
+          <div className="container">
+            <p className="eyebrow green">Topics we cover</p>
+            <div>
+              {[
+                "Managed support",
+                "Cloud change",
+                "Cybersecurity",
+                "Infrastructure",
+                "Operational resilience",
+                "Technology planning",
+              ].map((topic) => (
+                <span key={topic}>{topic}</span>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="final-cta">
+          <div className="container cta-grid">
+            <div>
+              <p className="eyebrow green">
+                Need advice specific to your environment?
+              </p>
+              <h2>Turn the guidance into a practical next step.</h2>
+            </div>
+            <div>
+              <p>
+                Tell us what you are planning or what is getting in the way.
+              </p>
+              <div className="actions">
+                <Link className="button light" href="/contact#enquiry-form">
+                  Start a conversation <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
+  );
+}
