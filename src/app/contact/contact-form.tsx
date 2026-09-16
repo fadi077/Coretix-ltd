@@ -7,6 +7,7 @@ type FormStatus = "idle" | "sending" | "success" | "error";
 export function ContactForm() {
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [acknowledgementSent, setAcknowledgementSent] = useState(true);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -22,13 +23,17 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const result = (await response.json()) as { error?: string };
+      const result = (await response.json()) as {
+        error?: string;
+        acknowledgementSent?: boolean;
+      };
 
       if (!response.ok) {
         throw new Error(result.error || "We could not send your enquiry.");
       }
 
       form.reset();
+      setAcknowledgementSent(result.acknowledgementSent !== false);
       setStatus("success");
     } catch (error) {
       setErrorMessage(
@@ -81,6 +86,10 @@ export function ContactForm() {
             <option>Infrastructure and networks</option>
             <option>Backup and recovery</option>
             <option>Software development</option>
+            <option>AI development and automation</option>
+            <option>AI chatbot development</option>
+            <option>Web development</option>
+            <option>Mobile app development</option>
             <option>Not sure yet</option>
           </select>
         </label>
@@ -110,8 +119,10 @@ export function ContactForm() {
       </div>
       {status === "success" && (
         <p className="form-notice success" role="status">
-          <strong>Your enquiry has been sent.</strong> We’ll reply from{" "}
-          <a href="mailto:info@coretix.org">info@coretix.org</a>.
+          <strong>Your enquiry has been sent.</strong>{" "}
+          {acknowledgementSent
+            ? "We’ve emailed a confirmation and will reply within 24 hours."
+            : "We’ll review it and reply within 24 hours. Please email info@coretix.org if you need to add anything."}
         </p>
       )}
       {status === "error" && (

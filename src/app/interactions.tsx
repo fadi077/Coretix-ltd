@@ -8,6 +8,9 @@ const serviceLinks = [
   ["Infrastructure & Networks", "infrastructure-networks"],
   ["Backup & Disaster Recovery", "backup-disaster-recovery"],
   ["Software Development", "software-development"],
+  ["AI Development & Automation", "ai-development-automation"],
+  ["Web Development", "web-development"],
+  ["Mobile App Development", "mobile-app-development"],
 ];
 export function SiteHeader() {
   const [mobile, setMobile] = useState(false),

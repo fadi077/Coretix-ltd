@@ -9,7 +9,7 @@ import { absoluteUrl, createPageMetadata, serializeJsonLd } from "../seo";
 export const metadata: Metadata = createPageMetadata({
   title: "IT Services for Growing UK Businesses | Coretix Ltd",
   description:
-    "Explore nationwide UK managed IT, Microsoft 365, cybersecurity, network, backup and software services, with international remote support available.",
+    "UK business IT, Microsoft 365, cybersecurity, cloud, AI automation, web and mobile app development, networks, backup and software services.",
   path: "/services",
 });
 
@@ -44,9 +44,10 @@ export default function ServicesPage() {
             </div>
             <div>
               <p>
-                From an everyday user issue to a wider infrastructure or cloud
-                change, Coretix Ltd brings the work into one clear, accountable
-                technology plan.
+                From managed IT support and Microsoft 365 to cybersecurity, AI
+                automation, web development and mobile app development, Coretix
+                Ltd brings the work into one clear, accountable technology plan
+                for UK businesses.
               </p>
               <Link className="button primary" href="/contact#enquiry-form">
                 Talk through your priorities <span aria-hidden="true">↗</span>
@@ -72,7 +73,7 @@ export default function ServicesPage() {
                   href={`/services/${service.slug}`}
                   key={service.slug}
                 >
-                  <ServiceVisual type={index + 1} />
+                  <ServiceVisual type={(index % 6) + 1} />
                   <small>{service.signal}</small>
                   <h2>{service.name}</h2>
                   <p>{service.intro}</p>

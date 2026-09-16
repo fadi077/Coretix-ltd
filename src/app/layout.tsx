@@ -67,8 +67,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   viewportFit: "cover",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f7f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a2928" },
+    { media: "(prefers-color-scheme: light)", color: "#f4f3ef" },
+    { media: "(prefers-color-scheme: dark)", color: "#07182b" },
   ],
   colorScheme: "light",
 };
@@ -82,6 +82,14 @@ const knowledgeGraph = {
       name: SITE_NAME,
       url: SITE_URL,
       logo: absoluteUrl("/icon.svg"),
+      email: "info@coretix.org",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        email: "info@coretix.org",
+        areaServed: "GB",
+        availableLanguage: "en-GB",
+      },
       description: DEFAULT_DESCRIPTION,
       areaServed: STRUCTURED_SERVICE_AREAS,
       knowsAbout: [
@@ -93,6 +101,10 @@ const knowledgeGraph = {
         "Router installation",
         "Backup and disaster recovery",
         "Software development",
+        "AI development and workflow automation",
+        "AI chatbot development",
+        "Web development",
+        "Mobile app development",
       ],
     },
     {

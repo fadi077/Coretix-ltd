@@ -7,7 +7,11 @@ import {
 } from "./media";
 import { SiteFooter } from "./site-footer";
 import Link from "next/link";
-import { createPageMetadata, DEFAULT_DESCRIPTION } from "./seo";
+import {
+  createPageMetadata,
+  DEFAULT_DESCRIPTION,
+  serializeJsonLd,
+} from "./seo";
 import { COVERAGE_ANSWER, COVERAGE_QUESTION } from "./coverage";
 
 export const metadata = createPageMetadata({
@@ -47,6 +51,21 @@ const services = [
     "Purpose-built software exploration for workflows off-the-shelf tools cannot serve well.",
     "software-development",
   ],
+  [
+    "AI Development & Automation",
+    "Practical AI assistants, chatbots and workflow automation shaped around your business processes.",
+    "ai-development-automation",
+  ],
+  [
+    "Web Development",
+    "Accessible websites and secure web applications built around your audience, workflow and goals.",
+    "web-development",
+  ],
+  [
+    "Mobile App Development",
+    "Focused mobile products for customers, field teams and internal users across real working contexts.",
+    "mobile-app-development",
+  ],
 ];
 const faqs = [
   [
@@ -71,6 +90,15 @@ const faqs = [
     "A short outline of your current challenges, priorities and timescales is enough to start a useful conversation.",
   ],
 ];
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(([question, answer]) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
+};
 const Arrow = () => <span aria-hidden="true">↗</span>;
 
 export default function Home() {
@@ -81,6 +109,10 @@ export default function Home() {
       </a>
       <SiteHeader />
       <main id="main" className="home-page">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
+        />
         <section className="hero" id="top">
           <div className="container hero-topline">
             <p className="hero-category">Technology</p>
@@ -207,7 +239,7 @@ export default function Home() {
             <div className="service-grid">
               {services.map(([title, desc, slug], i) => (
                 <article className={`service s${i + 1}`} key={title}>
-                  <ServiceVisual type={i + 1} />
+                  <ServiceVisual type={(i % 6) + 1} />
                   <h3>{title}</h3>
                   <p>{desc}</p>
                   <Link

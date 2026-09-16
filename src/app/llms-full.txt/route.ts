@@ -48,13 +48,13 @@ Key takeaways: ${insight.takeaways.join("; ")}.`,
 Canonical site: ${SITE_URL}
 Language: English (United Kingdom)
 Market: United Kingdom
-Business category: Managed technology and practical IT services
+Business category: Managed technology, practical IT, AI development and digital product services
 
 ## Service coverage
 ${COVERAGE_ANSWER}
 
 ## Organisation summary
-Coretix Ltd helps growing UK organisations keep everyday technology working, improve infrastructure, strengthen cybersecurity, plan cloud change and deliver practical on-site technology work. The working approach starts with operational context, uses clear communication and aims for a proportionate, accountable next step.
+Coretix Ltd helps growing UK organisations keep everyday technology working, improve infrastructure, strengthen cybersecurity, plan cloud change, automate practical workflows and deliver web or mobile products. The working approach starts with operational context, uses clear communication and aims for a proportionate, accountable next step.
 
 General enquiries and client support: info@coretix.org
 The site does not publish a telephone number, street address, service level, price, certification or guaranteed outcome. Scope, availability and commercial terms are confirmed during consultation.

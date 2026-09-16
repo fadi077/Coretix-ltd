@@ -7,7 +7,7 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 export const SITE_NAME = "Coretix Ltd";
 export const DEFAULT_DESCRIPTION =
-  "Nationwide UK managed IT support, Microsoft 365, cybersecurity, infrastructure and on-site technology services, with international remote support available.";
+  "UK managed IT support, Microsoft 365, cybersecurity, AI automation, web and mobile app development, infrastructure and on-site technology services.";
 export const DEFAULT_SOCIAL_IMAGE = "/opengraph-image";
 
 export function absoluteUrl(path = "/") {

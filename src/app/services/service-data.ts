@@ -833,6 +833,232 @@ export const services: Service[] = [
       },
     ],
   },
+  {
+    slug: "ai-development-automation",
+    name: "AI Development & Automation",
+    shortName: "AI and automation",
+    seoTitle: "AI Development & Automation UK | Coretix Ltd",
+    seoDescription:
+      "AI development, workflow automation and chatbot solutions for UK businesses, designed around practical processes, data and measurable outcomes.",
+    eyebrow: "AI development and automation",
+    headline: "Practical AI systems that reduce repetitive work.",
+    intro:
+      "Design useful AI assistants, business automation and chatbot experiences around the work your team already does.",
+    signal: "AI · automation · assistants",
+    toolGroups: [
+      {
+        title: "AI assistants and chatbots",
+        copy: "Plan useful conversational experiences for customer service, internal support and knowledge access.",
+        tools: ["AI chatbots", "Knowledge assistants", "Prompt and workflow design", "Human handover paths"],
+      },
+      {
+        title: "Business automation",
+        copy: "Connect repetitive work across systems so teams spend less time on manual handoffs and data re-entry.",
+        tools: ["Workflow automation", "API integrations", "Document and data processing", "Approval workflows"],
+      },
+      {
+        title: "Responsible implementation",
+        copy: "Keep AI adoption proportionate with clear ownership, data boundaries, testing and review.",
+        tools: ["Use-case assessment", "Data and access review", "Evaluation and testing", "Monitoring and improvement"],
+      },
+    ],
+    frameworks: [
+      {
+        name: "Outcome-led discovery",
+        copy: "Start with the business process, user need and decision to improve before choosing an AI pattern.",
+      },
+      {
+        name: "Human-centred automation",
+        copy: "Design clear handoffs, review points and exception paths so people remain accountable for important decisions.",
+      },
+      {
+        name: "Secure data boundaries",
+        copy: "Consider permissions, retention, sensitive information and operational ownership as part of the design.",
+      },
+    ],
+    deliveryStages: [
+      { title: "Identify the opportunity", copy: "Map the process, friction, data sources and outcome worth improving." },
+      { title: "Test the pattern", copy: "Prototype a focused assistant, automation or chatbot workflow against realistic examples." },
+      { title: "Integrate carefully", copy: "Connect approved systems, permissions and handoffs with appropriate testing and review." },
+      { title: "Improve in use", copy: "Monitor quality, user feedback and exceptions to guide the next safe improvement." },
+    ],
+    problems: [
+      { title: "Repetitive administration", copy: "Teams lose time copying information between inboxes, documents and business systems." },
+      { title: "Unanswered questions", copy: "Useful knowledge can be difficult to find when it is spread across files, tools and informal conversations." },
+      { title: "AI without an operating model", copy: "Unclear data boundaries, ownership and review can make an otherwise promising AI idea difficult to trust." },
+    ],
+    capabilities: [
+      { title: "AI use-case design", copy: "Translate a business challenge into a focused, testable AI or automation opportunity." },
+      { title: "Chatbot and assistant planning", copy: "Shape conversational flows, source content, escalation rules and the user experience around them." },
+      { title: "Workflow integration", copy: "Connect automation to the systems, approvals and records that make the process useful in practice." },
+    ],
+    deliverables: [
+      "AI and automation opportunity assessment",
+      "Chatbot or assistant conversation design",
+      "Workflow and integration map",
+      "Data, access and review considerations",
+      "Prototype or proof-of-concept plan",
+      "Testing and improvement roadmap",
+    ],
+    outcomes: [
+      "Clearer AI investment decisions",
+      "Less avoidable manual handling",
+      "More accessible business knowledge",
+      "A controlled path from experiment to useful service",
+    ],
+    faqs: [
+      {
+        question: "What AI services can Coretix Ltd help with?",
+        answer: "The service covers practical AI use-case discovery, business automation, chatbot and internal assistant planning, integrations and improvement. The right approach depends on the process, data and outcome involved.",
+      },
+      {
+        question: "Can an AI chatbot connect to our existing systems?",
+        answer: "It may be possible where the systems provide suitable APIs, permissions and data access. Integration feasibility and security requirements should be assessed before implementation.",
+      },
+      {
+        question: "How do you keep business AI use responsible?",
+        answer: "Start with a defined use case, limit data access, establish human review and test realistic examples. Ongoing ownership and monitoring should be agreed before wider rollout.",
+      },
+    ],
+  },
+  {
+    slug: "web-development",
+    name: "Web Development",
+    shortName: "Web development",
+    seoTitle: "Web Development for UK Businesses | Coretix Ltd",
+    seoDescription:
+      "Web development for UK businesses, from accessible websites to secure web applications, integrations and digital tools built around real workflows.",
+    eyebrow: "Web development",
+    headline: "Web experiences built to be useful, clear and ready to grow.",
+    intro: "Create a professional website, web application or digital workflow that makes it easier for people to find, understand and use your service.",
+    signal: "Websites · applications · integrations",
+    toolGroups: [
+      {
+        title: "Websites and content",
+        copy: "Build responsive, accessible pages with a clear content structure and a maintainable publishing approach.",
+        tools: ["Responsive websites", "Content management", "Accessibility foundations", "SEO-ready page structure"],
+      },
+      {
+        title: "Web applications",
+        copy: "Shape digital tools around users, permissions, data and the operational workflow behind the interface.",
+        tools: ["Business web apps", "Portals and dashboards", "Secure authentication", "Role-based workflows"],
+      },
+      {
+        title: "Integrations and delivery",
+        copy: "Connect approved services and keep releases reviewable, testable and easier to improve over time.",
+        tools: ["REST APIs", "Third-party integrations", "Git and CI/CD", "Testing and monitoring"],
+      },
+    ],
+    frameworks: [
+      { name: "Content-first planning", copy: "Make the audience, message, structure and conversion path clear before building the interface." },
+      { name: "Accessible responsive design", copy: "Treat readable content, keyboard use, responsive layouts and clear interaction as core requirements." },
+      { name: "Maintainable delivery", copy: "Prefer understandable components, documented integrations and repeatable release steps over avoidable complexity." },
+    ],
+    deliveryStages: [
+      { title: "Clarify the audience", copy: "Define users, intent, content, workflows and the outcome the web experience needs to support." },
+      { title: "Design the structure", copy: "Create the information architecture, key journeys and visual direction before implementation." },
+      { title: "Build and test", copy: "Develop responsive pages or application features with quality, accessibility and security checks." },
+      { title: "Launch and improve", copy: "Release with an agreed handover and use feedback, analytics and business priorities to guide improvements." },
+    ],
+    problems: [
+      { title: "A website that does not explain the offer", copy: "Visitors struggle to understand who the business helps, what it provides and what to do next." },
+      { title: "Disconnected digital work", copy: "Manual exports and duplicated data slow teams down when the website is not connected to the wider workflow." },
+      { title: "Hard-to-maintain builds", copy: "Unclear ownership, fragile changes or inaccessible patterns make future improvements unnecessarily risky." },
+    ],
+    capabilities: [
+      { title: "Website and application discovery", copy: "Turn business goals, users and constraints into a focused web brief and delivery path." },
+      { title: "Frontend and backend delivery", copy: "Build the interface, business logic, data connections and operational foundations needed for the agreed scope." },
+      { title: "Technical SEO foundations", copy: "Support crawlable structure, meaningful metadata, readable content and internal linking as part of the build." },
+    ],
+    deliverables: [
+      "Website or web application discovery",
+      "Information architecture and user journeys",
+      "Responsive interface design and development",
+      "CMS, API or third-party integration planning",
+      "Accessibility, performance and quality checks",
+      "Launch, handover and improvement roadmap",
+    ],
+    outcomes: [
+      "A clearer digital experience for customers and staff",
+      "Better-connected web workflows",
+      "More maintainable content and code",
+      "A stronger foundation for future digital improvements",
+    ],
+    faqs: [
+      { question: "Can Coretix Ltd build both websites and web applications?", answer: "Yes. The starting point may be a public-facing website, an internal portal, a dashboard or a workflow-focused web application, depending on the requirement." },
+      { question: "Will the website be ready for search engines?", answer: "Technical SEO foundations such as crawlable structure, metadata, accessible content and internal linking can be included. Ongoing rankings also depend on content, authority and market competition." },
+      { question: "Can a new website connect with existing business tools?", answer: "Integration can be explored where the existing service provides suitable access, documentation and permissions. The data flow and security implications should be defined during discovery." },
+    ],
+  },
+  {
+    slug: "mobile-app-development",
+    name: "Mobile App Development",
+    shortName: "Mobile apps",
+    seoTitle: "Mobile App Development UK | Coretix Ltd",
+    seoDescription:
+      "Mobile app development for UK businesses, covering iOS, Android and cross-platform products with secure integrations and a practical release plan.",
+    eyebrow: "Mobile app development",
+    headline: "Mobile products designed around the moment work happens.",
+    intro: "Plan and build a focused mobile application for customers, field teams or internal users, with the data and services needed behind it.",
+    signal: "iOS · Android · field workflows",
+    toolGroups: [
+      {
+        title: "Mobile product experience",
+        copy: "Shape clear, accessible journeys for the people who need to complete tasks away from a desktop.",
+        tools: ["iOS and Android journeys", "Cross-platform planning", "Mobile-first UX", "Offline considerations"],
+      },
+      {
+        title: "Data and integrations",
+        copy: "Connect the app to the systems, records and services that make the mobile experience useful.",
+        tools: ["API integration", "Secure authentication", "Notifications", "Data synchronisation"],
+      },
+      {
+        title: "Quality and release",
+        copy: "Prepare for device variation, testing, release controls and the operational feedback needed after launch.",
+        tools: ["Device testing", "App quality checks", "Release planning", "Usage feedback loops"],
+      },
+    ],
+    frameworks: [
+      { name: "User and context first", copy: "Design for the environment, connectivity, device and pressure in which the app will actually be used." },
+      { name: "Focused first release", copy: "Prioritise the smallest useful mobile experience before expanding scope and operational overhead." },
+      { name: "Secure by design", copy: "Consider identity, permissions, sensitive data, API access and release responsibilities throughout delivery." },
+    ],
+    deliveryStages: [
+      { title: "Understand the use case", copy: "Map users, devices, connectivity, tasks, data and the outcome the app should support." },
+      { title: "Prototype the journey", copy: "Test the most important mobile flow before committing to a broader product build." },
+      { title: "Build and validate", copy: "Implement the agreed experience and integrations, then test across realistic devices and scenarios." },
+      { title: "Release and learn", copy: "Plan handover, store or managed distribution, feedback and the next improvement cycle." },
+    ],
+    problems: [
+      { title: "Desktop-only processes", copy: "Field and mobile teams have to delay work or duplicate notes because the right workflow is not available where they are." },
+      { title: "Poor mobile experience", copy: "Important tasks become slower when a responsive website is not enough for repeated, on-the-go use." },
+      { title: "Unclear app scope", copy: "A large feature list can hide the small number of mobile journeys that would create the most value first." },
+    ],
+    capabilities: [
+      { title: "Mobile product discovery", copy: "Clarify the people, context, devices, journeys and operational constraints before development begins." },
+      { title: "App and API delivery", copy: "Build the agreed mobile experience and the secure service connections that support it." },
+      { title: "Release readiness", copy: "Create a practical testing, distribution, handover and feedback approach for the first release and beyond." },
+    ],
+    deliverables: [
+      "Mobile app opportunity and user-flow assessment",
+      "iOS, Android or cross-platform delivery recommendation",
+      "Mobile interface and interaction design",
+      "API, authentication and data integration plan",
+      "Device, accessibility and quality checks",
+      "Release, handover and improvement roadmap",
+    ],
+    outcomes: [
+      "A clearer mobile product direction",
+      "Better support for field and on-the-go work",
+      "A focused first release scope",
+      "More connected mobile workflows",
+    ],
+    faqs: [
+      { question: "Can you build an app for both iOS and Android?", answer: "The delivery approach can be assessed for iOS, Android or cross-platform use based on the users, device requirements, integrations and long-term ownership needs." },
+      { question: "Can a mobile app work with our existing business systems?", answer: "It may be possible through suitable APIs and authentication. Existing documentation, data ownership, permissions and security requirements need to be reviewed first." },
+      { question: "Do you need a complete app idea before we talk?", answer: "No. A clear description of the users, problem and desired outcome is enough to start discovery and identify a practical first release." },
+    ],
+  },
 ];
 export function getService(slug: string) {
   return services.find((service) => service.slug === slug);

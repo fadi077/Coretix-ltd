@@ -10,7 +10,7 @@ import { COVERAGE_ANSWER } from "../coverage";
 export const metadata: Metadata = createPageMetadata({
   title: "Contact Coretix Ltd | Discuss Your IT Requirements",
   description:
-    "Talk to Coretix Ltd about nationwide UK managed IT support, Microsoft 365, cybersecurity, infrastructure, on-site work or international remote support.",
+    "Talk to Coretix Ltd about UK managed IT support, Microsoft 365, cybersecurity, AI automation, web and mobile app development, infrastructure or on-site work.",
   path: "/contact",
   image: "/images/contact/contact-consultation.png",
   imageAlt: "A technology specialist listening during a business consultation",

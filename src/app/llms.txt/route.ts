@@ -28,7 +28,7 @@ export function GET() {
 
   const body = `# Coretix Ltd
 
-> Coretix Ltd provides managed IT support, Microsoft 365, cybersecurity, business network, infrastructure, backup, recovery and practical on-site technology services for growing UK organisations.
+> Coretix Ltd provides managed IT support, Microsoft 365, cybersecurity, AI development and automation, web and mobile app development, business network, infrastructure, backup, recovery and practical on-site technology services for growing UK organisations.
 
 Coretix Ltd focuses on clear communication, practical delivery, operational continuity and proportionate technology decisions. Service scope, availability, commercial terms and coverage are confirmed during consultation.
 

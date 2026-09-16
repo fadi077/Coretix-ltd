@@ -4,7 +4,7 @@ import { SiteHeader } from "../interactions";
 import { ResponsiveImage } from "../media";
 import { SiteFooter } from "../site-footer";
 import { industries } from "./industry-data";
-import { createPageMetadata } from "../seo";
+import { absoluteUrl, createPageMetadata, serializeJsonLd } from "../seo";
 export const metadata: Metadata = createPageMetadata({
   title: "IT Support by Industry for UK Organisations | Coretix Ltd",
   description:
@@ -14,6 +14,19 @@ export const metadata: Metadata = createPageMetadata({
   imageAlt: "A professional team working in a contemporary office",
 });
 export default function IndustriesPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Coretix Ltd industry technology support",
+    url: absoluteUrl("/industries"),
+    itemListElement: industries.map((industry, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: industry.name,
+      url: absoluteUrl(`/industries/${industry.slug}`),
+    })),
+  };
+
   return (
     <>
       <a className="skip-link" href="#main">
@@ -73,9 +86,8 @@ export default function IndustriesPage() {
               ))}
             </div>
             <p className="industry-disclaimer">
-              Industry descriptions are capability-led and provisional. Any
-              customer evidence will require verification and approval before
-              publication.
+              These pages describe Coretix Ltd&apos;s current capability. The
+              right scope is confirmed after understanding your environment.
             </p>
           </div>
         </section>
@@ -100,6 +112,10 @@ export default function IndustriesPage() {
         </section>
       </main>
       <SiteFooter />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
+      />
     </>
   );
 }

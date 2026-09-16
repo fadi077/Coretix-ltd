@@ -10,69 +10,74 @@ export default function OpenGraphImage() {
       <div
         style={{
           alignItems: "stretch",
-          background: "#eef4ef",
-          color: "#0a2928",
+          background: "#f4f3ef",
+          color: "#112235",
           display: "flex",
           height: "100%",
-          padding: "64px",
+          padding: "44px",
           width: "100%",
         }}
       >
         <div
           style={{
-            background: "#0a2928",
-            borderRadius: "36px",
+            background: "#07182b",
+            borderRadius: "30px",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: "row",
             justifyContent: "space-between",
-            padding: "56px",
+            padding: "48px 52px",
             width: "100%",
           }}
         >
-          <div
-            style={{
-              alignItems: "center",
-              color: "white",
-              display: "flex",
-              fontSize: 34,
-              fontWeight: 800,
-            }}
-          >
-            <span style={{ color: "#82e6ba", marginRight: 14 }}>CORETIX</span> LTD
-          </div>
-          <div
-            style={{
-              color: "white",
-              display: "flex",
-              flexDirection: "column",
-              maxWidth: 900,
-            }}
-          >
-            <span
+          <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "70%" }}>
+            <div
               style={{
-                color: "#82e6ba",
-                fontSize: 25,
-                fontWeight: 700,
-                letterSpacing: 3,
-                textTransform: "uppercase",
-              }}
-            >
-              Managed technology services
-            </span>
-            <span
-              style={{
-                fontSize: 64,
+                alignItems: "center",
+                color: "#ffffff",
+                display: "flex",
+                fontSize: 32,
                 fontWeight: 800,
-                letterSpacing: -2,
-                lineHeight: 1.06,
-                marginTop: 20,
+                letterSpacing: -1,
               }}
             >
-              Practical IT expertise that keeps business moving.
-            </span>
+              <span style={{ color: "#8bbdff", marginRight: 14 }}>CORETIX</span>
+              <span style={{ color: "#c7d2de", fontSize: 13, letterSpacing: 4 }}>LTD</span>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", maxWidth: 720 }}>
+              <span
+                style={{
+                  color: "#72d49b",
+                  fontSize: 22,
+                  fontWeight: 700,
+                  letterSpacing: 3,
+                  textTransform: "uppercase",
+                }}
+              >
+                Managed technology services
+              </span>
+              <span
+                style={{
+                  color: "#ffffff",
+                  fontSize: 58,
+                  fontWeight: 800,
+                  letterSpacing: -2,
+                  lineHeight: 1.06,
+                  marginTop: 18,
+                }}
+              >
+                Technology that keeps business moving.
+              </span>
+            </div>
+            <div style={{ color: "#b8c8d6", display: "flex", fontSize: 20 }}>
+              Managed IT · Microsoft 365 · Cybersecurity · Infrastructure
+            </div>
           </div>
-          <div style={{ color: "#cfe0da", display: "flex", fontSize: 24 }}>
-            Managed IT · Microsoft 365 · Cybersecurity · Infrastructure
+          <div style={{ alignItems: "center", display: "flex", justifyContent: "center", width: "24%" }}>
+            <div style={{ border: "1px solid #375b7f", borderRadius: 22, display: "flex", height: 190, justifyContent: "center", padding: 18, width: 190 }}>
+              <div style={{ alignItems: "center", border: "1px solid #1674ea", borderRadius: "50%", display: "flex", height: 128, justifyContent: "center", width: 128 }}>
+                <div style={{ background: "#1674ea", borderRadius: 10, height: 42, width: 42 }} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

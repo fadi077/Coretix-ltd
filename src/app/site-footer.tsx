@@ -22,6 +22,13 @@ export function SiteFooter() {
           <Link href="/services/infrastructure-networks">
             Infrastructure & Networks
           </Link>
+          <Link href="/services/ai-development-automation">
+            AI Development & Automation
+          </Link>
+          <Link href="/services/web-development">Web Development</Link>
+          <Link href="/services/mobile-app-development">
+            Mobile App Development
+          </Link>
           <Link href="/services">View all services</Link>
         </div>
         <div>
