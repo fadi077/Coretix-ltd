@@ -426,6 +426,23 @@ footer {
 .home-page .case-shell .case-support > b {
   color: #112235;
 }
+
+.form-trap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form-submit button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
 @media (max-width: 600px) {
   .customer-proof {
     padding: 44px 0 38px;

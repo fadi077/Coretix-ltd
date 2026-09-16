@@ -2,37 +2,51 @@
 
 import { useState, type FormEvent } from "react";
 
-export function ContactForm() {
-  const [notice, setNotice] = useState(false);
+type FormStatus = "idle" | "sending" | "success" | "error";
 
-  function submit(event: FormEvent<HTMLFormElement>) {
+export function ContactForm() {
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const formData = new FormData(event.currentTarget);
-    const name = String(formData.get("name") ?? "");
-    const email = String(formData.get("email") ?? "");
-    const organisation = String(formData.get("organisation") ?? "");
-    const telephone = String(formData.get("telephone") ?? "");
-    const service = String(formData.get("service") ?? "Not specified");
-    const message = String(formData.get("message") ?? "");
-    const body = [
-      `Name: ${name}`,
-      `Work email: ${email}`,
-      `Organisation: ${organisation || "Not provided"}`,
-      `Telephone: ${telephone || "Not provided"}`,
-      `Area: ${service}`,
-      "",
-      message,
-    ].join("\n");
+    const form = event.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+    setStatus("sending");
+    setErrorMessage("");
 
-    window.location.href = `mailto:info@coretix.org?subject=${encodeURIComponent(
-      `Website enquiry from ${name}`,
-    )}&body=${encodeURIComponent(body)}`;
-    setNotice(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json()) as { error?: string };
+
+      if (!response.ok) {
+        throw new Error(result.error || "We could not send your enquiry.");
+      }
+
+      form.reset();
+      setStatus("success");
+    } catch (error) {
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "We could not send your enquiry. Please email info@coretix.org directly.",
+      );
+      setStatus("error");
+    }
   }
 
   return (
-    <form className="contact-form" onSubmit={submit} id="enquiry-form">
+    <form
+      className="contact-form"
+      onSubmit={submit}
+      id="enquiry-form"
+      aria-busy={status === "sending"}
+    >
       <div className="form-heading">
         <p className="eyebrow">Enquiry form</p>
         <h2>Tell us what needs to improve.</h2>
@@ -79,20 +93,30 @@ export function ContactForm() {
             placeholder="Briefly describe the issue, priority or change you are planning."
           />
         </label>
+        <input
+          className="form-trap"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+        />
       </div>
       <div className="form-submit">
-        <button className="button primary" type="submit">
-          Email your enquiry <span aria-hidden="true">↗</span>
+        <button className="button primary" type="submit" disabled={status === "sending"}>
+          {status === "sending" ? "Sending enquiry…" : "Send enquiry"}{" "}
+          <span aria-hidden="true">↗</span>
         </button>
-        <p>We will use your details only to respond to this enquiry.</p>
+        <p>Your enquiry will be sent securely to info@coretix.org.</p>
       </div>
-      {notice && (
-        <p className="form-notice" role="status">
-          <strong>
-            Your email app should open with the enquiry addressed to us.
-          </strong>
-          If it does not, email{" "}
-          <a href="mailto:info@coretix.org">info@coretix.org</a> directly.
+      {status === "success" && (
+        <p className="form-notice success" role="status">
+          <strong>Your enquiry has been sent.</strong> We’ll reply from{" "}
+          <a href="mailto:info@coretix.org">info@coretix.org</a>.
+        </p>
+      )}
+      {status === "error" && (
+        <p className="form-notice error" role="alert">
+          <strong>We couldn’t send your enquiry.</strong> {errorMessage}
         </p>
       )}
     </form>
