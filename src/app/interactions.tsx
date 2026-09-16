@@ -28,11 +28,11 @@ export function SiteHeader() {
           <Link
             className="logo"
             href="/"
-            aria-label="HP Techs home"
+            aria-label="Coretix Ltd home"
             onClick={closeMobile}
           >
-            <b>HP</b>
-            <span>TECHS</span>
+            <b>CORETIX</b>
+            <span>LTD</span>
           </Link>
           <nav
             id="primary-navigation"
@@ -46,24 +46,51 @@ export function SiteHeader() {
               <button
                 aria-expanded={services}
                 aria-controls="services-menu"
+                aria-haspopup="true"
                 onClick={() => setServices(!services)}
               >
                 Services <span aria-hidden="true">⌄</span>
               </button>
               {services && (
                 <div id="services-menu" className="services-menu">
-                  <Link href="/services" onClick={closeMobile}>
-                    View all services
+                  <div className="services-menu-heading">
+                    <span>Coretix services</span>
+                    <strong>Technology support shaped around your business.</strong>
+                  </div>
+                  <Link
+                    className="services-menu-all"
+                    href="/services"
+                    onClick={closeMobile}
+                  >
+                    <span className="services-menu-all-icon" aria-hidden="true">
+                      ↗
+                    </span>
+                    <span>
+                      <b>View all services</b>
+                      <small>Explore the full capability set</small>
+                    </span>
+                    <span className="services-menu-arrow" aria-hidden="true">
+                      →
+                    </span>
                   </Link>
-                  {serviceLinks.map(([label, slug]) => (
-                    <Link
-                      href={`/services/${slug}`}
-                      key={slug}
-                      onClick={closeMobile}
-                    >
-                      {label}
-                    </Link>
-                  ))}
+                  <div className="services-menu-links">
+                    {serviceLinks.map(([label, slug], index) => (
+                      <Link
+                        className="services-menu-link"
+                        href={`/services/${slug}`}
+                        key={slug}
+                        onClick={closeMobile}
+                      >
+                        <span className="services-menu-index" aria-hidden="true">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span>{label}</span>
+                        <span className="services-menu-arrow" aria-hidden="true">
+                          ↗
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

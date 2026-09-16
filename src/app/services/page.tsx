@@ -7,7 +7,7 @@ import { services } from "./service-data";
 import { absoluteUrl, createPageMetadata, serializeJsonLd } from "../seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "IT Services for Growing UK Businesses | HP Techs",
+  title: "IT Services for Growing UK Businesses | Coretix Ltd",
   description:
     "Explore nationwide UK managed IT, Microsoft 365, cybersecurity, network, backup and software services, with international remote support available.",
   path: "/services",
@@ -17,7 +17,7 @@ export default function ServicesPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "HP Techs technology services",
+    name: "Coretix Ltd technology services",
     url: absoluteUrl("/services"),
     itemListElement: services.map((service, index) => ({
       "@type": "ListItem",
@@ -45,7 +45,7 @@ export default function ServicesPage() {
             <div>
               <p>
                 From an everyday user issue to a wider infrastructure or cloud
-                change, HP Techs brings the work into one clear, accountable
+                change, Coretix Ltd brings the work into one clear, accountable
                 technology plan.
               </p>
               <Link className="button primary" href="/contact#enquiry-form">

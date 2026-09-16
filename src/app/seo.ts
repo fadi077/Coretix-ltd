@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const SITE_URL = (
-  configuredSiteUrl || "https://hp-techs.vercel.app"
+  configuredSiteUrl || "https://coretix.org"
 ).replace(/\/$/, "");
-export const SITE_NAME = "HP Techs";
+export const SITE_NAME = "Coretix Ltd";
 export const DEFAULT_DESCRIPTION =
   "Nationwide UK managed IT support, Microsoft 365, cybersecurity, infrastructure and on-site technology services, with international remote support available.";
 export const DEFAULT_SOCIAL_IMAGE = "/opengraph-image";
@@ -29,7 +29,7 @@ export function createPageMetadata({
   path,
   type = "website",
   image = DEFAULT_SOCIAL_IMAGE,
-  imageAlt = "HP Techs technology specialists working together",
+  imageAlt = "Coretix Ltd technology specialists working together",
 }: PageMetadataOptions): Metadata {
   const canonical = absoluteUrl(path);
   const socialImage = absoluteUrl(image);

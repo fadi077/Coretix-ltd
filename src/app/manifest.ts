@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "HP Techs | Managed Technology Services",
-    short_name: "HP Techs",
+    name: "Coretix Ltd | Managed Technology Services",
+    short_name: "Coretix Ltd",
     description:
       "Nationwide UK managed IT support, cloud, cybersecurity and infrastructure services, with international remote support available.",
     start_url: "/",

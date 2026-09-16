@@ -24,7 +24,7 @@ export const insights: Insight[] = [
     slug: "preparing-for-it-support-transition",
     category: "Planning",
     title: "Preparing your business for an IT support transition",
-    seoTitle: "How to Plan an IT Support Transition | HP Techs",
+    seoTitle: "How to Plan an IT Support Transition | Coretix Ltd",
     description:
       "A practical guide to changing IT support providers while protecting service continuity, access, knowledge and the day-to-day experience of your team.",
     image: "/images/insights/support-transition.jpg",
@@ -107,7 +107,7 @@ export const insights: Insight[] = [
     slug: "practical-cybersecurity-review",
     category: "Cybersecurity",
     title: "What a practical cybersecurity review should cover",
-    seoTitle: "What Should a Cybersecurity Review Cover? | HP Techs",
+    seoTitle: "What Should a Cybersecurity Review Cover? | Coretix Ltd",
     description:
       "Understand the people, devices, access, cloud, backup and response areas a practical cybersecurity review should examine for a growing organisation.",
     image: "/images/insights/security-review.jpg",
@@ -208,7 +208,7 @@ export const insights: Insight[] = [
     slug: "cloud-migration-without-disruption",
     category: "Cloud",
     title: "Planning a cloud migration without disrupting daily work",
-    seoTitle: "Plan a Cloud Migration Without Disruption | HP Techs",
+    seoTitle: "Plan a Cloud Migration Without Disruption | Coretix Ltd",
     description:
       "Plan a controlled cloud migration by mapping dependencies, preparing users, protecting access and sequencing technical change around daily operations.",
     image: "/images/insights/cloud-migration.webp",

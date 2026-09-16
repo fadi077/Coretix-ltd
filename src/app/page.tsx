@@ -11,7 +11,7 @@ import { createPageMetadata, DEFAULT_DESCRIPTION } from "./seo";
 import { COVERAGE_ANSWER, COVERAGE_QUESTION } from "./coverage";
 
 export const metadata = createPageMetadata({
-  title: "Managed IT Support & Technology Services UK | HP Techs",
+  title: "Managed IT Support & Technology Services UK | Coretix Ltd",
   description: DEFAULT_DESCRIPTION,
   path: "/",
 });
@@ -63,7 +63,7 @@ const faqs = [
     "A typical onboarding begins with discovery and assessment, followed by an agreed transition plan. Timing depends on your environment.",
   ],
   [
-    "Can HP Techs work alongside an internal IT team?",
+    "Can Coretix Ltd work alongside an internal IT team?",
     "A co-managed approach can be explored where responsibilities and escalation paths are clearly agreed.",
   ],
   [
@@ -80,35 +80,39 @@ export default function Home() {
         Skip to main content
       </a>
       <SiteHeader />
-      <main id="main">
+      <main id="main" className="home-page">
         <section className="hero" id="top">
+          <div className="container hero-topline">
+            <p className="hero-category">Technology</p>
+            <p className="hero-positioning">
+              <i aria-hidden="true" />
+              <strong>Managed IT.</strong>
+              <span>Without unnecessary complexity.</span>
+            </p>
+          </div>
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">
-                Nationwide UK managed technology services
-              </p>
               <h1>
-                IT that keeps your <span>business moving.</span>
+                Technology that helps your business <span>move with confidence.</span>
               </h1>
               <p className="lede">
-                Managed IT, cloud, cybersecurity and infrastructure services for
-                organisations across the UK, with international remote support
-                also available.
+                Reliable support for the people, systems and infrastructure your
+                organisation depends on.
               </p>
               <div className="actions">
                 <Link className="button primary" href="/contact">
-                  Book an IT consultation <Arrow />
+                  Discuss your IT needs <Arrow />
                 </Link>
                 <Link className="button secondary" href="/services">
                   Explore our services
                 </Link>
               </div>
-              <p className="support-note">
-                <i /> Tell us what is slowing your business down. We’ll help
-                identify a practical next step.
-              </p>
             </div>
             <div className="hero-media">
+              <div className="hero-media-header">
+                <span>Coretix Ltd</span>
+                <b>People · Systems · Continuity</b>
+              </div>
               <ResponsiveImage
                 src="/images/homepage/hero-team.jpg"
                 alt="Technology support colleagues working together at a computer"
@@ -118,9 +122,8 @@ export default function Home() {
               />
               <div className="operational-overlay" aria-hidden="true">
                 <span>
-                  <i /> Support in progress
+                  <i /> Technology support that stays accountable
                 </span>
-                <b>People · Systems · Continuity</b>
               </div>
             </div>
           </div>
@@ -224,7 +227,7 @@ export default function Home() {
         <section className="accountable section">
           <div className="container accountable-grid">
             <div>
-              <p className="eyebrow green">Why HP Techs</p>
+              <p className="eyebrow green">Why Coretix Ltd</p>
               <h2>A technology partner that stays accountable.</h2>
               <p className="lede">
                 We combine responsive support with long-term technology
@@ -297,7 +300,7 @@ export default function Home() {
                 <p>
                   After the laptop setup phase, a 6-person team provided
                   additional IT support. They helped users work with their
-                  laptops and resolving device problems.
+                  laptops and resolve device problems.
                 </p>
               </div>
               <p className="case-evidence-note">
@@ -371,7 +374,7 @@ export default function Home() {
                 ))}
               </ul>
               <Link className="button ink-button" href="/about">
-                Meet HP Techs <Arrow />
+                Meet Coretix Ltd <Arrow />
               </Link>
             </div>
           </div>
@@ -414,7 +417,7 @@ export default function Home() {
                 >
                   <ResponsiveImage
                     src={src}
-                    alt=""
+                    alt={`${x} technology support environment`}
                     className="industry-photo"
                     sizes="(max-width: 600px) 100vw, 50vw"
                   />
@@ -485,7 +488,7 @@ export default function Home() {
               <p className="eyebrow">Common questions</p>
               <h2>Questions businesses ask before choosing an IT partner</h2>
               <p>
-                These answers are indicative for this prototype. Service details
+                These answers provide a practical starting point. Service details
                 are confirmed through consultation.
               </p>
             </div>
@@ -511,7 +514,10 @@ export default function Home() {
                   Send us an enquiry
                 </Link>
               </div>
-              <small>Expected response time: to be confirmed</small>
+              <small>
+                Email <a href="mailto:info@coretix.org">info@coretix.org</a> to
+                start a conversation.
+              </small>
             </div>
           </div>
         </section>

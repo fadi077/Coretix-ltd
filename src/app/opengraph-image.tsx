@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "HP Techs | Managed IT support and technology services";
+export const alt = "Coretix Ltd | Managed IT support and technology services";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function OpenGraphImage() {
               fontWeight: 800,
             }}
           >
-            <span style={{ color: "#82e6ba", marginRight: 14 }}>HP</span> TECHS
+            <span style={{ color: "#82e6ba", marginRight: 14 }}>CORETIX</span> LTD
           </div>
           <div
             style={{

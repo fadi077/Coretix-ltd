@@ -8,9 +8,9 @@ import { createPageMetadata } from "../seo";
 import { COVERAGE_ANSWER } from "../coverage";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "Contact HP Techs | Discuss Your IT Requirements",
+  title: "Contact Coretix Ltd | Discuss Your IT Requirements",
   description:
-    "Talk to HP Techs about nationwide UK managed IT support, Microsoft 365, cybersecurity, infrastructure, on-site work or international remote support.",
+    "Talk to Coretix Ltd about nationwide UK managed IT support, Microsoft 365, cybersecurity, infrastructure, on-site work or international remote support.",
   path: "/contact",
   image: "/images/contact/contact-consultation.png",
   imageAlt: "A technology specialist listening during a business consultation",
@@ -27,7 +27,7 @@ export default function ContactPage() {
         <section className="contact-hero" id="top">
           <div className="container contact-hero-grid">
             <div>
-              <p className="eyebrow">Contact HP Techs</p>
+              <p className="eyebrow">Contact Coretix Ltd</p>
               <h1>
                 Tell us what is slowing your <span>business down.</span>
               </h1>
@@ -50,13 +50,13 @@ export default function ContactPage() {
                 </li>
                 <li>
                   <i />
-                  We agree whether HP Techs is the right fit and what should
+                  We agree whether Coretix Ltd is the right fit and what should
                   happen next.
                 </li>
               </ol>
               <small>
-                Expected response time and service availability are awaiting
-                confirmation.
+                We review every enquiry and reply using the email address you
+                provide.
               </small>
             </div>
           </div>
@@ -76,15 +76,17 @@ export default function ContactPage() {
                 <h2>Choose the route that fits.</h2>
                 <div>
                   <h3>New enquiries</h3>
-                  <p>Email address awaiting confirmation</p>
+                  <p>
+                    <a href="mailto:info@coretix.org">info@coretix.org</a>
+                  </p>
                 </div>
                 <div>
                   <h3>Existing client support</h3>
-                  <p>Support route awaiting confirmation</p>
-                </div>
-                <div>
-                  <h3>Telephone</h3>
-                  <p>UK number awaiting confirmation</p>
+                  <p>
+                    Email <a href="mailto:info@coretix.org">info@coretix.org</a>{" "}
+                    with your organisation name and a short description of the
+                    issue.
+                  </p>
                 </div>
                 <div>
                   <h3>Service coverage</h3>
@@ -122,7 +124,7 @@ export default function ContactPage() {
           <div className="container">
             <p>Looking for an overview first?</p>
             <Link href="/about">
-              Learn how HP Techs works <span aria-hidden="true">↗</span>
+              Learn how Coretix Ltd works <span aria-hidden="true">↗</span>
             </Link>
           </div>
         </section>

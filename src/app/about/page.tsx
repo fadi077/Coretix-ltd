@@ -6,9 +6,9 @@ import { SiteFooter } from "../site-footer";
 import { createPageMetadata } from "../seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "About HP Techs | Practical Technology Expertise",
+  title: "About Coretix Ltd | Practical Technology Expertise",
   description:
-    "Learn how HP Techs approaches managed IT, cloud, cybersecurity and infrastructure work for growing UK organisations.",
+    "Learn how Coretix Ltd approaches managed IT, cloud, cybersecurity and infrastructure work for growing UK organisations.",
   path: "/about",
   image: "/images/about/about-team.png",
   imageAlt: "Technology specialists working together beside network equipment",
@@ -26,7 +26,7 @@ export default function AboutPage() {
         <section className="inner-hero" id="top">
           <div className="container inner-hero-grid">
             <div>
-              <p className="eyebrow">About HP Techs</p>
+              <p className="eyebrow">About Coretix Ltd</p>
               <h1>
                 Practical technology expertise, delivered with{" "}
                 <span>clear accountability.</span>
@@ -71,7 +71,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p>
-                HP Techs is being built around a straightforward idea:
+                Coretix Ltd is being built around a straightforward idea:
                 organisations deserve technology support that understands
                 operational reality as well as technical detail.
               </p>
@@ -157,7 +157,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p>
-                People working with HP Techs bring experience gained within
+                People working with Coretix Ltd bring experience gained within
                 major organisational environments, including Tesco, Lloyds Bank,
                 Vodafone, Nike, adidas and Hilton.
               </p>
@@ -177,7 +177,7 @@ export default function AboutPage() {
         <section className="final-cta">
           <div className="container cta-grid">
             <div>
-              <p className="eyebrow green">Work with HP Techs</p>
+              <p className="eyebrow green">Work with Coretix Ltd</p>
               <h2>Bring us the technology problem your team needs solved.</h2>
             </div>
             <div>

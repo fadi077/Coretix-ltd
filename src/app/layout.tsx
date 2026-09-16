@@ -24,7 +24,7 @@ const manrope = Manrope({
 });
 
 const homeMetadata = createPageMetadata({
-  title: "Managed IT Support & Technology Services UK | HP Techs",
+  title: "Managed IT Support & Technology Services UK | Coretix Ltd",
   description: DEFAULT_DESCRIPTION,
   path: "/",
 });
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ...homeMetadata,
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Managed IT Support & Technology Services UK | HP Techs",
+    default: "Managed IT Support & Technology Services UK | Coretix Ltd",
     template: "%s",
   },
   applicationName: SITE_NAME,
@@ -118,13 +118,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           rel="alternate"
           type="text/plain"
           href="/llms.txt"
-          title="HP Techs AI site summary"
+          title="Coretix Ltd AI site summary"
         />
         <link
           rel="alternate"
           type="text/plain"
           href="/llms-full.txt"
-          title="HP Techs detailed AI site content"
+          title="Coretix Ltd detailed AI site content"
         />
       </head>
       <body className="min-h-full flex flex-col">

@@ -24,7 +24,7 @@ export const services: Service[] = [
     slug: "managed-it-support",
     name: "Managed IT Support",
     shortName: "Managed support",
-    seoTitle: "Managed IT Support for UK Businesses | HP Techs",
+    seoTitle: "Managed IT Support for UK Businesses | Coretix Ltd",
     seoDescription:
       "Nationwide managed IT support for UK organisations, covering users, devices, systems and on-site needs, with international remote support available.",
     eyebrow: "Managed IT support",
@@ -145,7 +145,7 @@ export const services: Service[] = [
           "Scope is agreed after discovery and may include user support, device assistance, maintenance, monitoring, supplier coordination and ongoing technology guidance.",
       },
       {
-        question: "Can HP Techs work with an internal IT team?",
+        question: "Can Coretix Ltd work with an internal IT team?",
         answer:
           "A co-managed approach can be explored where responsibilities, access and escalation routes are clearly agreed.",
       },
@@ -159,7 +159,7 @@ export const services: Service[] = [
     slug: "cloud-microsoft-365",
     name: "Cloud & Microsoft 365",
     shortName: "Cloud & Microsoft 365",
-    seoTitle: "Microsoft 365 & Cloud Support UK | HP Techs",
+    seoTitle: "Microsoft 365 & Cloud Support UK | Coretix Ltd",
     seoDescription:
       "Microsoft 365 and cloud support for UK organisations, including migration planning, secure configuration, collaboration and ongoing administration.",
     eyebrow: "Cloud and Microsoft 365",
@@ -295,7 +295,7 @@ export const services: Service[] = [
     slug: "cybersecurity",
     name: "Cybersecurity",
     shortName: "Cybersecurity",
-    seoTitle: "Practical Cybersecurity Services UK | HP Techs",
+    seoTitle: "Practical Cybersecurity Services UK | Coretix Ltd",
     seoDescription:
       "Practical cybersecurity services for growing UK organisations, helping improve risk visibility, access controls, device security and resilience.",
     eyebrow: "Cybersecurity",
@@ -431,7 +431,7 @@ export const services: Service[] = [
     slug: "infrastructure-networks",
     name: "Infrastructure & Networks",
     shortName: "Infrastructure & networks",
-    seoTitle: "Business Network & IT Infrastructure UK | HP Techs",
+    seoTitle: "Business Network & IT Infrastructure UK | Coretix Ltd",
     seoDescription:
       "Nationwide UK network and infrastructure services covering Cisco cabling, connectivity, router installation, equipment deployment and on-site support.",
     eyebrow: "Infrastructure and networks",
@@ -550,7 +550,7 @@ export const services: Service[] = [
       {
         question: "Do you install Cisco cabling and routers?",
         answer:
-          "HP Techs personnel have practical experience with Cisco cabling, router installation and related on-site infrastructure work. Exact equipment and scope are confirmed before delivery.",
+          "Coretix Ltd personnel have practical experience with Cisco cabling, router installation and related on-site infrastructure work. Exact equipment and scope are confirmed before delivery.",
       },
       {
         question: "Can work be delivered across multiple sites?",
@@ -568,7 +568,7 @@ export const services: Service[] = [
     slug: "backup-disaster-recovery",
     name: "Backup & Disaster Recovery",
     shortName: "Backup & recovery",
-    seoTitle: "Business Backup & Disaster Recovery UK | HP Techs",
+    seoTitle: "Business Backup & Disaster Recovery UK | Coretix Ltd",
     seoDescription:
       "Backup and disaster recovery planning for UK businesses, helping protect data, clarify recovery priorities and improve operational resilience.",
     eyebrow: "Backup and disaster recovery",
@@ -705,7 +705,7 @@ export const services: Service[] = [
     slug: "software-development",
     name: "Software Development",
     shortName: "Software development",
-    seoTitle: "Business Software Development UK | HP Techs",
+    seoTitle: "Business Software Development UK | Coretix Ltd",
     seoDescription:
       "Purpose-built business software exploration and development for UK organisations with workflows that off-the-shelf tools cannot serve well.",
     eyebrow: "Software development",
@@ -817,7 +817,7 @@ export const services: Service[] = [
     ],
     faqs: [
       {
-        question: "What types of software can HP Techs build?",
+        question: "What types of software can Coretix Ltd build?",
         answer:
           "The proposition focuses on purpose-built business tools and workflow improvement. Specific technology, integration and delivery capability must be confirmed against the requirement.",
       },

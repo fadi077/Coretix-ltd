@@ -64,7 +64,7 @@ export function ExperienceSection() {
           <p>
             Our people bring practical experience from complex, high-profile
             environments. They support users, install infrastructure and
-            completing essential on-site work without disrupting day-to-day
+            complete essential on-site work without disrupting day-to-day
             operations.
           </p>
         </div>

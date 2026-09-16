@@ -6,7 +6,7 @@ import { SiteFooter } from "../site-footer";
 import { industries } from "./industry-data";
 import { createPageMetadata } from "../seo";
 export const metadata: Metadata = createPageMetadata({
-  title: "IT Support by Industry for UK Organisations | HP Techs",
+  title: "IT Support by Industry for UK Organisations | Coretix Ltd",
   description:
     "Technology support for professional services, retail and multi-site operations, logistics, field teams and growing UK SMEs.",
   path: "/industries",
@@ -44,7 +44,7 @@ export default function IndustriesPage() {
               <p className="eyebrow">Areas of focus</p>
               <h2>Practical capability, adapted to the environment.</h2>
               <p>
-                These pages describe sectors HP Techs is equipped to support.
+                These pages describe sectors Coretix Ltd is equipped to support.
                 They do not represent confirmed customer relationships.
               </p>
             </div>

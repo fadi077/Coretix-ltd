@@ -100,7 +100,7 @@ export default async function InsightPage({
                   <p className="lede">{insight.intro}</p>
                   <div className="article-meta">
                     <span>{insight.readingTime}</span>
-                    <span>HP Techs guidance</span>
+                    <span>Coretix Ltd guidance</span>
                   </div>
                 </div>
                 <ResponsiveImage

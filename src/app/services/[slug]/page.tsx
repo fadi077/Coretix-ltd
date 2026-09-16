@@ -150,7 +150,7 @@ export default async function ServicePage({
         <section className="service-capabilities section" id="capabilities">
           <div className="container">
             <div className="service-capability-heading">
-              <p className="eyebrow">How HP Techs can help</p>
+              <p className="eyebrow">How Coretix Ltd can help</p>
               <h2>Focused capability, connected to a clear outcome.</h2>
             </div>
             <div className="service-capability-grid">

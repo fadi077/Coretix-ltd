@@ -43,7 +43,7 @@ Key takeaways: ${insight.takeaways.join("; ")}.`,
     )
     .join("\n\n");
 
-  const body = `# HP Techs: detailed reference
+  const body = `# Coretix Ltd: detailed reference
 
 Canonical site: ${SITE_URL}
 Language: English (United Kingdom)
@@ -54,9 +54,10 @@ Business category: Managed technology and practical IT services
 ${COVERAGE_ANSWER}
 
 ## Organisation summary
-HP Techs helps growing UK organisations keep everyday technology working, improve infrastructure, strengthen cybersecurity, plan cloud change and deliver practical on-site technology work. The working approach starts with operational context, uses clear communication and aims for a proportionate, accountable next step.
+Coretix Ltd helps growing UK organisations keep everyday technology working, improve infrastructure, strengthen cybersecurity, plan cloud change and deliver practical on-site technology work. The working approach starts with operational context, uses clear communication and aims for a proportionate, accountable next step.
 
-No unconfirmed telephone number, email address, street address, service level, price, certification or guaranteed outcome should be inferred. Current details are confirmed through the enquiry process at ${SITE_URL}/contact.
+General enquiries and client support: info@coretix.org
+The site does not publish a telephone number, street address, service level, price, certification or guaranteed outcome. Scope, availability and commercial terms are confirmed during consultation.
 
 ## Services
 ${serviceContent}
@@ -68,7 +69,7 @@ ${industryContent}
 ${insightContent}
 
 ## Experience and attribution
-People working with HP Techs bring experience gained in major organisational environments, including Tesco, Lloyds Bank, Vodafone, Nike, adidas and Hilton. Some work was delivered through third-party or subcontracted engagements. These names identify work environments and do not imply a direct client relationship, partnership or endorsement.
+People working with Coretix Ltd bring experience gained in major organisational environments, including Tesco, Lloyds Bank, Vodafone, Nike, adidas and Hilton. Some work was delivered through third-party or subcontracted engagements. These names identify work environments and do not imply a direct client relationship, partnership or endorsement.
 
 The Tesco Bank Newcastle deployment described on the homepage took place from May to June 2026. An 11-person team prepared and configured 1,000 laptops, setting up each device with the intended user present. A 6-person team then provided additional IT support for laptop use and device problems.
 

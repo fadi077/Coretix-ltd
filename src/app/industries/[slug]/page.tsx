@@ -21,7 +21,7 @@ export async function generateMetadata({
   const industry = getIndustry(slug);
   return industry
     ? createPageMetadata({
-        title: `IT Support for ${industry.name} | HP Techs`,
+        title: `IT Support for ${industry.name} | Coretix Ltd`,
         description: industry.intro,
         path: `/industries/${industry.slug}`,
         image: industry.image,

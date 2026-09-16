@@ -26,18 +26,18 @@ export function GET() {
     )
     .join("\n");
 
-  const body = `# HP Techs
+  const body = `# Coretix Ltd
 
-> HP Techs provides managed IT support, Microsoft 365, cybersecurity, business network, infrastructure, backup, recovery and practical on-site technology services for growing UK organisations.
+> Coretix Ltd provides managed IT support, Microsoft 365, cybersecurity, business network, infrastructure, backup, recovery and practical on-site technology services for growing UK organisations.
 
-HP Techs focuses on clear communication, practical delivery, operational continuity and proportionate technology decisions. Service scope, availability, commercial terms and coverage are confirmed during consultation.
+Coretix Ltd focuses on clear communication, practical delivery, operational continuity and proportionate technology decisions. Service scope, availability, commercial terms and coverage are confirmed during consultation.
 
 ## Service coverage
 ${COVERAGE_SHORT}
 
 ## Core pages
 - [Home](${SITE_URL}/)
-- [About HP Techs](${SITE_URL}/about)
+- [About Coretix Ltd](${SITE_URL}/about)
 - [All services](${SITE_URL}/services)
 - [Industries](${SITE_URL}/industries)
 - [Technology insights](${SITE_URL}/insights)
@@ -53,7 +53,7 @@ ${industryLinks}
 ${insightLinks}
 
 ## Verified experience context
-- Personnel working with HP Techs have delivered practical technology work within major organisational environments, including through third-party and subcontracted engagements.
+- Personnel working with Coretix Ltd have delivered practical technology work within major organisational environments, including through third-party and subcontracted engagements.
 - A documented Tesco Bank Newcastle deployment took place from May to June 2026: an 11-person setup team prepared 1,000 laptops with users present, followed by a 6-person team providing additional IT support.
 - Named organisations indicate environments in which personnel performed work. They do not imply a direct client relationship, partnership or endorsement.
 

@@ -5,9 +5,9 @@ export function SiteFooter() {
     <footer>
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Link className="logo" href="/" aria-label="HP Techs home">
-            <b>HP</b>
-            <span>TECHS</span>
+          <Link className="logo" href="/" aria-label="Coretix Ltd home">
+            <b>CORETIX</b>
+            <span>LTD</span>
           </Link>
           <p>Managed technology services for growing UK organisations.</p>
           <small>{COVERAGE_SHORT}</small>
@@ -33,21 +33,11 @@ export function SiteFooter() {
         <div>
           <h2>Client support</h2>
           <Link href="/contact#contact-options">Access support</Link>
-          <Link href="/contact#contact-options">Service status</Link>
-          <p>[UK telephone to be confirmed]</p>
+          <a href="mailto:info@coretix.org">info@coretix.org</a>
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>
-          © {new Date().getFullYear()} HP Techs. Company number: [to be
-          confirmed]
-        </p>
-        <nav aria-label="Legal">
-          <Link href="/contact">Privacy</Link>
-          <Link href="/contact">Cookies</Link>
-          <Link href="/contact">Terms</Link>
-          <Link href="/contact">Accessibility</Link>
-        </nav>
+        <p>© {new Date().getFullYear()} Coretix Ltd.</p>
       </div>
     </footer>
   );

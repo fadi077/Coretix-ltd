@@ -7,7 +7,7 @@ import { insights } from "./insight-data";
 import { createPageMetadata } from "../seo";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "IT Insights & Practical Guidance | HP Techs",
+  title: "IT Insights & Practical Guidance | Coretix Ltd",
   description:
     "Practical guidance for UK organisations planning IT support changes, cybersecurity reviews, cloud migrations and better technology decisions.",
   path: "/insights",
@@ -26,7 +26,7 @@ export default function InsightsPage() {
         <section className="insight-index-hero">
           <div className="container insight-index-heading">
             <div>
-              <p className="eyebrow">HP Techs insights</p>
+              <p className="eyebrow">Coretix Ltd insights</p>
               <h1>
                 Straightforward guidance for{" "}
                 <span>better technology decisions.</span>
