@@ -408,6 +408,24 @@ footer {
 .footer-grid a[href^="mailto:"]:hover {
   color: #fff;
 }
+
+.home-page .case-shell .case-notice {
+  background: #143455;
+  border-left: 3px solid #4b9cff;
+  color: #dbeafe;
+}
+
+.home-page .case-shell .case-detail b {
+  color: #8bbdff;
+}
+
+.home-page .case-shell .metrics span {
+  color: #526579;
+}
+
+.home-page .case-shell .case-support > b {
+  color: #112235;
+}
 @media (max-width: 600px) {
   .customer-proof {
     padding: 44px 0 38px;
