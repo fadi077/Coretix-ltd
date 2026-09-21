@@ -39,7 +39,7 @@ export function ContactForm() {
       setErrorMessage(
         error instanceof Error
           ? error.message
-          : "We could not send your enquiry. Please email info@coretix.org directly.",
+          : "We could not send your enquiry. Please email info@coreit-x.com directly.",
       );
       setStatus("error");
     }
@@ -115,14 +115,14 @@ export function ContactForm() {
           {status === "sending" ? "Sending enquiry…" : "Send enquiry"}{" "}
           <span aria-hidden="true">↗</span>
         </button>
-        <p>Your enquiry will be sent securely to info@coretix.org.</p>
+        <p>Your enquiry will be sent securely to info@coreit-x.com.</p>
       </div>
       {status === "success" && (
         <p className="form-notice success" role="status">
           <strong>Your enquiry has been sent.</strong>{" "}
           {acknowledgementSent
             ? "We’ve emailed a confirmation and will reply within 24 hours."
-            : "We’ll review it and reply within 24 hours. Please email info@coretix.org if you need to add anything."}
+            : "We’ll review it and reply within 24 hours. Please email info@coreit-x.com if you need to add anything."}
         </p>
       )}
       {status === "error" && (

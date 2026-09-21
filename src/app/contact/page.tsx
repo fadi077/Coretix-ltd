@@ -77,13 +77,13 @@ export default function ContactPage() {
                 <div>
                   <h3>New enquiries</h3>
                   <p>
-                    <a href="mailto:info@coretix.org">info@coretix.org</a>
+                    <a href="mailto:info@coreit-x.com">info@coreit-x.com</a>
                   </p>
                 </div>
                 <div>
                   <h3>Existing client support</h3>
                   <p>
-                    Email <a href="mailto:info@coretix.org">info@coretix.org</a>{" "}
+                    Email <a href="mailto:info@coreit-x.com">info@coreit-x.com</a>{" "}
                     with your organisation name and a short description of the
                     issue.
                   </p>

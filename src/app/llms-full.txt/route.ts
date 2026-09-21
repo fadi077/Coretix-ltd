@@ -56,7 +56,7 @@ ${COVERAGE_ANSWER}
 ## Organisation summary
 Coretix Ltd helps growing UK organisations keep everyday technology working, improve infrastructure, strengthen cybersecurity, plan cloud change, automate practical workflows and deliver web or mobile products. The working approach starts with operational context, uses clear communication and aims for a proportionate, accountable next step.
 
-General enquiries and client support: info@coretix.org
+General enquiries and client support: info@coreit-x.com
 The site does not publish a telephone number, street address, service level, price, certification or guaranteed outcome. Scope, availability and commercial terms are confirmed during consultation.
 
 ## Services

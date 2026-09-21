@@ -547,7 +547,7 @@ export default function Home() {
                 </Link>
               </div>
               <small>
-                Email <a href="mailto:info@coretix.org">info@coretix.org</a> to
+                Email <a href="mailto:info@coreit-x.com">info@coreit-x.com</a> to
                 start a conversation.
               </small>
             </div>

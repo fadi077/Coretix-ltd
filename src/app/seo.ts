@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const SITE_URL = (
-  configuredSiteUrl || "https://coretix.org"
+  configuredSiteUrl || "https://coreit-x.com"
 ).replace(/\/$/, "");
 export const SITE_NAME = "Coretix Ltd";
 export const DEFAULT_DESCRIPTION =

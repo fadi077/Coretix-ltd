@@ -82,11 +82,11 @@ const knowledgeGraph = {
       name: SITE_NAME,
       url: SITE_URL,
       logo: absoluteUrl("/icon.svg"),
-      email: "info@coretix.org",
+      email: "info@coreit-x.com",
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "customer support",
-        email: "info@coretix.org",
+        email: "info@coreit-x.com",
         areaServed: "GB",
         availableLanguage: "en-GB",
       },

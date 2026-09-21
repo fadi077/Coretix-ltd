@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-const CONTACT_EMAIL = "info@coretix.org";
+const CONTACT_EMAIL = "info@coreit-x.com";
 
 function clean(value: unknown, maxLength: number) {
   return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
@@ -54,8 +54,8 @@ function emailLayout(content: string, preheader: string) {
               <td style="padding:22px 34px;background:#07182b;color:#aebdca;font-size:12px;line-height:1.6;">
                 <strong style="color:#ffffff;">Coretix Ltd</strong><br />
                 Managed technology services for growing UK organisations.<br />
-                <a href="https://coretix.org" style="color:#8bbdff;">coretix.org</a> &nbsp;·&nbsp;
-                <a href="mailto:info@coretix.org" style="color:#8bbdff;">info@coretix.org</a>
+                <a href="https://coreit-x.com" style="color:#8bbdff;">coreit-x.com</a> &nbsp;·&nbsp;
+                <a href="mailto:info@coreit-x.com" style="color:#8bbdff;">info@coreit-x.com</a>
               </td>
             </tr>
           </table>
@@ -154,7 +154,7 @@ export async function POST(request: Request) {
   if (!smtpUser || !smtpPassword) {
     console.error("[contact] SMTP credentials are not configured.");
     return NextResponse.json(
-      { error: "Please email info@coretix.org directly while delivery is configured." },
+      { error: "Please email info@coreit-x.com directly while delivery is configured." },
       { status: 503 },
     );
   }
@@ -189,7 +189,7 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("[contact] SMTP enquiry send failed", error);
     return NextResponse.json(
-      { error: "We could not send your enquiry. Please email info@coretix.org directly." },
+      { error: "We could not send your enquiry. Please email info@coreit-x.com directly." },
       { status: 500 },
     );
   }
@@ -202,7 +202,7 @@ export async function POST(request: Request) {
       to: email,
       replyTo: process.env.CONTACT_TO?.trim() || CONTACT_EMAIL,
       subject: "We’ve received your enquiry | Coretix Ltd",
-      text: `Hi ${name},\n\nWe’ve received your query${service !== "Not specified" ? ` about ${service}` : ""} and a member of the Coretix team will get back to you within 24 hours.\n\nIf you need to add anything, reply to this email and it will come directly to the Coretix team.\n\nCoretix Ltd\nhttps://coretix.org\ninfo@coretix.org`,
+      text: `Hi ${name},\n\nWe’ve received your query${service !== "Not specified" ? ` about ${service}` : ""} and a member of the Coretix team will get back to you within 24 hours.\n\nIf you need to add anything, reply to this email and it will come directly to the Coretix team.\n\nCoretix Ltd\nhttps://coreit-x.com\ninfo@coreit-x.com`,
       html: acknowledgementEmail(name, service),
     });
   } catch (error) {

@@ -40,7 +40,7 @@ export function SiteFooter() {
         <div>
           <h2>Client support</h2>
           <Link href="/contact#contact-options">Access support</Link>
-          <a href="mailto:info@coretix.org">info@coretix.org</a>
+          <a href="mailto:info@coreit-x.com">info@coreit-x.com</a>
         </div>
       </div>
       <div className="container footer-bottom">
