@@ -41,6 +41,7 @@ ${COVERAGE_SHORT}
 - [All services](${SITE_URL}/services)
 - [Industries](${SITE_URL}/industries)
 - [Technology insights](${SITE_URL}/insights)
+- [Deployment case study](${SITE_URL}/case-studies/tesco-bank-device-deployment)
 - [Contact](${SITE_URL}/contact)
 
 ## Services
@@ -54,7 +55,7 @@ ${insightLinks}
 
 ## Verified experience context
 - Personnel working with Coretix Ltd have delivered practical technology work within major organisational environments, including through third-party and subcontracted engagements.
-- A documented Tesco Bank Newcastle deployment took place from May to June 2026: an 11-person setup team prepared 1,000 laptops with users present, followed by a 6-person team providing additional IT support.
+- A documented Tesco Bank Newcastle deployment is available as a dedicated case study: an 11-person setup team prepared 1,000 laptops with users present, followed by a 6-person team providing additional IT support.
 - Named organisations indicate environments in which personnel performed work. They do not imply a direct client relationship, partnership or endorsement.
 
 ## Machine-readable resources

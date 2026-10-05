@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { COVERAGE_SHORT } from "./coverage";
 export function SiteFooter() {
   return (
@@ -6,8 +7,13 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <Link className="logo" href="/" aria-label="Coretix Ltd home">
-            <b>CORETIX</b>
-            <span>LTD</span>
+            <Image
+              className="site-logo"
+              src="/images/brand/coretix-logo-light.png"
+              alt="Coretix Ltd"
+              width={1800}
+              height={295}
+            />
           </Link>
           <p>Managed technology services for growing UK organisations.</p>
           <small>{COVERAGE_SHORT}</small>

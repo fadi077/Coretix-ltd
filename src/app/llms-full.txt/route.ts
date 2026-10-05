@@ -77,6 +77,7 @@ The Tesco Bank Newcastle deployment described on the homepage took place from Ma
 - Primary site: ${SITE_URL}/
 - Services index: ${SITE_URL}/services
 - Insights index: ${SITE_URL}/insights
+- Deployment case study: ${SITE_URL}/case-studies/tesco-bank-device-deployment
 - Sitemap: ${SITE_URL}/sitemap.xml
 - Contact route: ${SITE_URL}/contact
 `;

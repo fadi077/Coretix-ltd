@@ -14,9 +14,9 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ["business", "technology", "productivity"],
     icons: [
       {
-        src: "/icon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
+        src: "/images/brand/coretix-icon.png",
+        sizes: "512x512",
+        type: "image/png",
       },
     ],
   };

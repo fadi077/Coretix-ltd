@@ -1,6 +1,5 @@
 import { Faq, SiteHeader } from "./interactions";
 import {
-  ExperienceSection,
   ResponsiveImage,
   ServiceVisual,
   TechnologyPlatforms,
@@ -160,7 +159,34 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <ExperienceSection />
+        <section className="home-proof section" aria-labelledby="home-proof-heading">
+          <div className="container home-proof-grid">
+            <div>
+              <p className="eyebrow">Built for real work</p>
+              <h2 id="home-proof-heading">
+                Practical technology support for teams that need things to work.
+              </h2>
+            </div>
+            <div className="home-proof-list">
+              <p>
+                Coretix Ltd brings hands-on experience across user support,
+                infrastructure, rollouts and technology change.
+              </p>
+              <div>
+                <span>01</span>
+                <strong>Clear ownership</strong>
+              </div>
+              <div>
+                <span>02</span>
+                <strong>Practical delivery</strong>
+              </div>
+              <div>
+                <span>03</span>
+                <strong>Support that understands the wider operation</strong>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="principles section">
           <div className="container principles-layout">
             <ResponsiveImage
@@ -284,64 +310,22 @@ export default function Home() {
         </section>
         <TechnologyPlatforms />
         <section className="case section" id="case-studies">
-          <div className="container case-shell">
-            <div className="case-visual">
-              <ResponsiveImage
-                src="/images/case-studies/case-operation.webp"
-                alt="Technology deployment colleagues preparing laptops together"
-                className="case-photo"
-                sizes="(max-width: 900px) 100vw, 48vw"
-              />
-            </div>
+          <div className="container case-shell case-teaser">
             <div className="case-content">
-              <p className="eyebrow">Deployment experience</p>
-              <p className="case-sector">Tesco Bank · Newcastle</p>
+              <p className="eyebrow">Selected experience</p>
               <h2>
-                Supporting a 1,000-device laptop deployment for people at work.
+                Technology delivery that stays focused on people and the work
+                they need to do.
               </h2>
               <p className="case-notice">
-                Delivery took place from May to June 2026.
+                From device rollouts to day-to-day support, we plan technical
+                work around users, operational priorities and continuity.
               </p>
-              <div className="case-detail">
-                <p>
-                  <b>The deployment</b>An 11-person team prepared and configured
-                  1,000 laptops at the Tesco Bank Newcastle branch.
-                </p>
-                <p>
-                  <b>The user experience</b>Each laptop was set up with its
-                  intended user present, helping confirm access and readiness
-                  before the device entered day-to-day use.
-                </p>
-              </div>
-              <div className="metrics">
-                <div>
-                  <b>1,000</b>
-                  <span>Laptops prepared</span>
-                </div>
-                <div>
-                  <b>11</b>
-                  <span>People in the setup team</span>
-                </div>
-                <div>
-                  <b>6</b>
-                  <span>People providing follow-on support</span>
-                </div>
-              </div>
-              <div className="case-support">
-                <b>Support after deployment</b>
-                <p>
-                  After the laptop setup phase, a 6-person team provided
-                  additional IT support. They helped users work with their
-                  laptops and resolve device problems.
-                </p>
-              </div>
-              <p className="case-evidence-note">
-                Delivery window: May to June 2026. Tesco Bank is named as the
-                environment in which personnel performed work. This does not
-                imply endorsement.
-              </p>
-              <Link className="button case-button" href="/contact">
-                Discuss a device rollout <Arrow />
+              <Link
+                className="button case-button"
+                href="/case-studies/tesco-bank-device-deployment"
+              >
+                View a detailed deployment case study <Arrow />
               </Link>
             </div>
           </div>

@@ -32,6 +32,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
       images: ["/images/insights/support-transition.jpg"],
     },
+    {
+      path: "/case-studies/tesco-bank-device-deployment",
+      priority: 0.7,
+      images: ["/images/case-studies/case-operation.webp"],
+    },
   ];
   return [
     ...staticRoutes.map(({ path, priority, images }) => ({

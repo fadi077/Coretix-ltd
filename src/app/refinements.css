@@ -2013,6 +2013,17 @@ header {
 .logo {
   padding: 8px 3px;
 }
+.site-logo {
+  display: block;
+  width: 186px;
+  height: auto;
+}
+.site-logo-light {
+  display: none;
+}
+.footer-brand .site-logo-light {
+  display: block;
+}
 .logo b {
   filter: drop-shadow(0 3px 12px #1674ea38);
 }
@@ -2072,6 +2083,9 @@ header {
   }
   .menu-toggle span {
     background: #dbe9f4;
+  }
+  .site-logo {
+    width: 166px;
   }
 }
 
@@ -4988,6 +5002,582 @@ body:has(.home-page) .nav-cta:hover {
   color: #58697a;
 }
 
+/* Darker homepage direction with restrained front-page proof. */
+body:has(.home-page) {
+  background: #091522;
+  color: #edf4fa;
+}
+
+body:has(.home-page) header {
+  background: #07121f;
+}
+
+body:has(.home-page) .nav-wrap {
+  background: #07121f;
+}
+
+body:has(.home-page) .nav-row {
+  border-color: #29445d;
+  background: #0d1d2d;
+  box-shadow: 0 16px 34px #0000002e, inset 0 1px 0 #ffffff0a;
+}
+
+body:has(.home-page) .site-logo-dark {
+  display: none;
+}
+
+body:has(.home-page) .site-logo-light {
+  display: block;
+}
+
+body:has(.home-page) .main-nav > a,
+body:has(.home-page) .services-nav > button {
+  color: #e2edf5;
+}
+
+body:has(.home-page) .main-nav > a:not(.nav-cta):hover,
+body:has(.home-page) .services-nav > button:hover,
+body:has(.home-page) .main-nav > a:not(.nav-cta):focus-visible,
+body:has(.home-page) .services-nav > button:focus-visible {
+  color: #ffffff;
+  background: #ffffff0d;
+  box-shadow: inset 0 0 0 1px #8ab9df26;
+}
+
+body:has(.home-page) .nav-cta {
+  border-color: #6eaaf0 !important;
+  background: #1674ea !important;
+  box-shadow: 0 10px 24px #00102055;
+}
+
+body:has(.home-page) .nav-cta:hover {
+  background: #3b91fa !important;
+  border-color: #8fc5ff !important;
+}
+
+.home-page .hero {
+  background:
+    radial-gradient(circle at 86% 16%, #1674ea38, transparent 28%),
+    radial-gradient(circle at 10% 92%, #72d49b18, transparent 26%),
+    linear-gradient(180deg, #0a1827 0%, #0b1a2a 100%);
+  color: #ffffff;
+}
+
+.home-page .hero::before {
+  display: block;
+  opacity: 0.32;
+  background-image:
+    linear-gradient(#86a8c41a 1px, transparent 1px),
+    linear-gradient(90deg, #86a8c41a 1px, transparent 1px);
+}
+
+.home-page .hero-category {
+  color: #8fc3ff;
+}
+
+.home-page .hero-positioning {
+  color: #9db2c5;
+}
+
+.home-page .hero-positioning strong {
+  color: #72d49b;
+}
+
+.home-page .hero-positioning i {
+  background: #72d49b;
+}
+
+.home-page .hero h1,
+.home-page .hero h1 span {
+  color: #f8fbff;
+}
+
+.home-page .hero .lede {
+  color: #c4d2df;
+}
+
+.home-page .hero .secondary {
+  border-color: #668199;
+  color: #f2f7fb;
+  background: #ffffff08;
+}
+
+.home-page .hero .secondary:hover {
+  border-color: #9bc8ff;
+  background: #ffffff14;
+}
+
+.home-page .hero-media {
+  border: 1px solid #7197b64d;
+  border-radius: 25px;
+  background: #10283d;
+  box-shadow: 0 28px 70px #0000004d;
+  padding: 12px;
+}
+
+.home-page .hero-photo {
+  border-radius: 17px;
+  box-shadow: none;
+}
+
+.home-page .home-proof {
+  background: #0e2031;
+  color: #ffffff;
+}
+
+.home-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.home-proof h2 {
+  max-width: 660px;
+  color: #ffffff;
+}
+
+.home-proof-list {
+  color: #bfceda;
+}
+
+.home-proof-list > p {
+  max-width: 540px;
+  margin: 0 0 28px;
+  line-height: 1.75;
+}
+
+.home-proof-list > div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  min-height: 60px;
+  border-top: 1px solid #355069;
+}
+
+.home-proof-list > div span {
+  color: #72d49b;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.home-proof-list > div strong {
+  color: #edf4fa;
+}
+
+.home-page .principles,
+.home-page .friction,
+.home-page .services,
+.home-page .process,
+.home-page .industries,
+.home-page .faq {
+  background: #0a1827;
+  color: #edf4fa;
+}
+
+.home-page .principles {
+  background:
+    radial-gradient(circle at 80% 24%, #1674ea19, transparent 25%),
+    #0a1827;
+}
+
+.home-page .principles h2,
+.home-page .friction h2,
+.home-page .services h2,
+.home-page .process h2,
+.home-page .industries h2,
+.home-page .insights h2,
+.home-page .faq h2,
+.home-page .human h2 {
+  color: #f4f8fb;
+}
+
+.home-page .principles-copy,
+.home-page .friction .split-heading > p,
+.home-page .services .split-heading > p,
+.home-page .process-line p,
+.home-page .human > div > div > p,
+.home-page .article-grid h3,
+.home-page .faq details p {
+  color: #b7c6d3;
+}
+
+.home-page .principle-row {
+  border-color: #304a61;
+}
+
+.home-page .principle-row > div {
+  border-color: #304a61;
+}
+
+.home-page .principle-row strong {
+  color: #edf4fa;
+}
+
+.home-page .principle-row small {
+  color: #aabccc;
+}
+
+.home-page .friction::before,
+.home-page .process::before,
+.home-page .industries::before,
+.home-page .faq::before {
+  background-image:
+    linear-gradient(#7194b51a 1px, transparent 1px),
+    linear-gradient(90deg, #7194b51a 1px, transparent 1px);
+}
+
+.home-page .outcome-list {
+  background: #06111d;
+  box-shadow: 0 22px 50px #00000035;
+}
+
+.home-page .outcome {
+  border-color: #2c455c;
+}
+
+.home-page .services {
+  background: #0e2031;
+}
+
+.home-page .service {
+  border-color: #2c465d;
+  background: #12273b;
+  color: #f4f8fb;
+  box-shadow: 0 12px 28px #00000020;
+}
+
+.home-page .service.s1,
+.home-page .service.s5 {
+  background: #10253a;
+  color: #f4f8fb;
+}
+
+.home-page .service:hover {
+  border-color: #5d98d3;
+  background: #163149;
+  box-shadow: 0 18px 35px #00000038;
+}
+
+.home-page .service p,
+.home-page .service.s1 p,
+.home-page .service.s5 p {
+  color: #b4c3d1;
+}
+
+.home-page .service a,
+.home-page .service a:hover {
+  color: #8fc3ff;
+}
+
+.home-page .service-visual {
+  border-color: #55748e;
+  background: #0c2034;
+  color: #86bcf7;
+}
+
+.home-page .accountable {
+  background:
+    radial-gradient(circle at 85% 25%, #1674ea2e, transparent 25%),
+    #07131f;
+  color: #ffffff;
+}
+
+.home-page .accountable .lede {
+  color: #b7c6d3;
+}
+
+.home-page .accountable ul {
+  border-color: #2e4a62;
+  background: #102438;
+  box-shadow: 0 18px 45px #0000002c;
+}
+
+.home-page .accountable li {
+  border-color: #2e4a62;
+  color: #e5eef5;
+}
+
+.home-page .platforms,
+.home-page .human,
+.home-page .insights {
+  background: #0e2031;
+  color: #edf4fa;
+}
+
+.home-page .platforms .platform-ecosystem,
+.home-page .platforms .platform-ecosystem article {
+  border-color: #304a61;
+}
+
+.home-page .platforms .platform-ecosystem strong {
+  color: #edf4fa;
+}
+
+.home-page .platforms .platform-ecosystem span,
+.home-page .platforms .platform-note {
+  color: #adbdcb;
+}
+
+.home-page .case {
+  background: #0a1827;
+}
+
+.home-page .case-teaser {
+  display: block;
+  border: 1px solid #2c465d;
+  background: #10273b;
+  box-shadow: 0 24px 65px #00000028;
+}
+
+.home-page .case-teaser h2 {
+  max-width: 760px;
+  color: #ffffff;
+}
+
+.home-page .case-teaser .case-notice {
+  max-width: 650px;
+  color: #bdccd8;
+  line-height: 1.7;
+}
+
+.home-page .case-teaser .case-button {
+  margin-top: 24px;
+  border-color: #6eaaf0;
+  color: #ffffff;
+}
+
+.home-page .process-line li {
+  border-color: #2c465d;
+  background: #12273b;
+}
+
+.home-page .process-line li > span {
+  background: #0a1827;
+  border-color: #5a7893;
+  color: #dce9f3;
+}
+
+.home-page .human {
+  background:
+    radial-gradient(circle at 18% 35%, #1674ea22, transparent 22%),
+    #0e2031;
+}
+
+.home-page .human ul li {
+  color: #dce8f1;
+  border-color: #304a61;
+}
+
+.home-page .industries {
+  background: #0a1827;
+}
+
+.home-page .industry-panel {
+  box-shadow: 0 14px 32px #00000035;
+}
+
+.home-page .insights {
+  background:
+    radial-gradient(circle at 84% 20%, #1674ea24, transparent 24%),
+    #0e2031;
+}
+
+.home-page .article-grid article {
+  border-color: #2c465d;
+  background: #12273b;
+}
+
+.home-page .article-grid article > p {
+  color: #8fc3ff;
+}
+
+.home-page .article-grid article > h3 {
+  color: #edf4fa;
+}
+
+.home-page .article-grid article > a {
+  border-color: #304a61;
+  color: #8fc3ff;
+}
+
+.home-page .faq {
+  background: #0a1827;
+}
+
+.home-page .faq-item {
+  border-color: #304a61;
+}
+
+.home-page .faq-item button {
+  color: #edf4fa;
+}
+
+.home-page .faq-answer p {
+  color: #b7c6d3;
+}
+
+.home-page .final-cta {
+  background:
+    radial-gradient(circle at 78% 22%, #1674ea55, transparent 23%),
+    #06111d;
+}
+
+/* Detailed delivery case study moved off the homepage. */
+.case-study-hero {
+  padding: 92px 0 96px;
+  background: #0b1b2b;
+  color: #ffffff;
+}
+
+.case-study-hero-grid,
+.case-study-summary-grid,
+.case-study-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.case-study-hero h1 {
+  max-width: 720px;
+  margin-top: 20px;
+  font-size: clamp(3.2rem, 5.2vw, 5.6rem);
+}
+
+.case-study-hero .case-sector {
+  color: #8fc3ff;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.case-study-hero .lede {
+  max-width: 600px;
+  margin-top: 28px;
+  color: #bfd0dd;
+  line-height: 1.7;
+}
+
+.case-study-photo {
+  min-height: 440px;
+  aspect-ratio: 1.08;
+  border-radius: 22px;
+  border: 1px solid #6284a04d;
+}
+
+.case-study-summary {
+  background: #f4f3ef;
+}
+
+.case-study-summary h2,
+.case-study-detail h2 {
+  max-width: 700px;
+}
+
+.case-study-summary-grid > div > p:last-child,
+.case-study-detail-grid > div:last-child > p {
+  color: #526579;
+  line-height: 1.75;
+}
+
+.case-study-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-block: 1px solid #c5cdd2;
+}
+
+.case-study-metrics > div {
+  display: grid;
+  gap: 8px;
+  padding: 25px 18px;
+}
+
+.case-study-metrics > div + div {
+  border-left: 1px solid #c5cdd2;
+}
+
+.case-study-metrics strong {
+  color: #0d5fc4;
+  font: 700 2.7rem/1 var(--font-display), Arial, sans-serif;
+}
+
+.case-study-metrics span {
+  color: #526579;
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.case-study-detail {
+  background: #0e2031;
+  color: #ffffff;
+}
+
+.case-study-detail-grid > div:last-child > p {
+  color: #bdccd8;
+}
+
+.case-study-detail .button {
+  margin-top: 16px;
+}
+
+.case-study-disclaimer {
+  padding: 20px 0;
+  background: #e7edf2;
+}
+
+.case-study-disclaimer p {
+  margin: 0;
+  color: #526579;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .home-proof-grid,
+  .case-study-hero-grid,
+  .case-study-summary-grid,
+  .case-study-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .case-study-hero {
+    padding: 70px 0 75px;
+  }
+
+  .case-study-photo {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-proof-grid {
+    gap: 34px;
+  }
+
+  .home-proof-list > div {
+    min-height: 54px;
+  }
+
+  .case-study-hero h1 {
+    font-size: clamp(3rem, 13vw, 4.4rem);
+  }
+
+  .case-study-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .case-study-metrics > div + div {
+    border-top: 1px solid #c5cdd2;
+    border-left: 0;
+  }
+}
+
 /* Site-wide light editorial shell for non-home pages. */
 body:not(:has(.home-page)) {
   background: #f4f3ef;
@@ -5160,4 +5750,320 @@ body:not(:has(.home-page)) .menu-toggle span {
     background: #f7fafc;
     color: #112235;
   }
+}
+
+/* Accessible dark system for every non-home page. Keep the palette consistent
+   without relying on inherited colours, which caused low-contrast copy in
+   hero, breadcrumb and card content. */
+body:not(:has(.home-page)) {
+  --paper: #091522;
+  --ink: #edf4fa;
+  --muted: #b7c6d3;
+  --line: #304a61;
+  --navy: #07121f;
+  background: #091522;
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .nav-wrap {
+  background: #091522;
+}
+
+body:not(:has(.home-page)) .nav-row {
+  border-color: #29445d;
+  background: #0d1d2d;
+  box-shadow: 0 16px 34px #00000024, inset 0 1px 0 #ffffff0b;
+}
+
+body:not(:has(.home-page)) header .site-logo-dark {
+  display: none;
+}
+
+body:not(:has(.home-page)) header .site-logo-light {
+  display: block;
+}
+
+body:not(:has(.home-page)) .main-nav > a,
+body:not(:has(.home-page)) .services-nav > button {
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .main-nav > a:not(.nav-cta):hover,
+body:not(:has(.home-page)) .services-nav > button:hover,
+body:not(:has(.home-page)) .main-nav > a:not(.nav-cta):focus-visible,
+body:not(:has(.home-page)) .services-nav > button:focus-visible {
+  color: #ffffff;
+  background: #17324a;
+  box-shadow: inset 0 0 0 1px #42627e;
+}
+
+body:not(:has(.home-page)) .services-nav > button span {
+  color: #8fc3ff;
+}
+
+body:not(:has(.home-page)) .inner-hero,
+body:not(:has(.home-page)) .contact-hero,
+body:not(:has(.home-page)) .industry-index-hero,
+body:not(:has(.home-page)) .industry-detail-hero,
+body:not(:has(.home-page)) .service-index-hero,
+body:not(:has(.home-page)) .service-detail-hero,
+body:not(:has(.home-page)) .insight-index-hero,
+body:not(:has(.home-page)) .article-hero {
+  background: #091522;
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .inner-hero h1,
+body:not(:has(.home-page)) .contact-hero h1,
+body:not(:has(.home-page)) .industry-index-hero h1,
+body:not(:has(.home-page)) .industry-detail-hero h1,
+body:not(:has(.home-page)) .service-index-hero h1,
+body:not(:has(.home-page)) .service-detail-hero h1,
+body:not(:has(.home-page)) .insight-index-hero h1,
+body:not(:has(.home-page)) .article-hero h1,
+body:not(:has(.home-page)) .inner-hero h2,
+body:not(:has(.home-page)) .contact-hero h2,
+body:not(:has(.home-page)) .service-detail-hero h2 {
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .inner-hero h1 span,
+body:not(:has(.home-page)) .contact-hero h1 span,
+body:not(:has(.home-page)) .industry-index-hero h1 span,
+body:not(:has(.home-page)) .industry-detail-hero h1 span,
+body:not(:has(.home-page)) .service-index-hero h1 span,
+body:not(:has(.home-page)) .service-detail-hero h1 span,
+body:not(:has(.home-page)) .insight-index-hero h1 span,
+body:not(:has(.home-page)) .article-hero h1 span {
+  color: #8fc3ff;
+}
+
+body:not(:has(.home-page)) .inner-hero .lede,
+body:not(:has(.home-page)) .contact-hero .lede,
+body:not(:has(.home-page)) .industry-index-heading > p,
+body:not(:has(.home-page)) .industry-detail-hero .lede,
+body:not(:has(.home-page)) .service-detail-hero .lede,
+body:not(:has(.home-page)) .service-index-heading > div:last-child > p,
+body:not(:has(.home-page)) .insight-index-heading > p,
+body:not(:has(.home-page)) .article-hero .lede,
+body:not(:has(.home-page)) .breadcrumb,
+body:not(:has(.home-page)) .breadcrumb a,
+body:not(:has(.home-page)) .industry-back,
+body:not(:has(.home-page)) .article-meta {
+  color: #b7c6d3;
+}
+
+body:not(:has(.home-page)) .breadcrumb a:hover,
+body:not(:has(.home-page)) .industry-back:hover {
+  color: #ffffff;
+}
+
+body:not(:has(.home-page)) .eyebrow,
+body:not(:has(.home-page)) .industry-index-hero .eyebrow,
+body:not(:has(.home-page)) .industry-detail-hero .eyebrow,
+body:not(:has(.home-page)) .service-index-heading .eyebrow,
+body:not(:has(.home-page)) .service-detail-hero .eyebrow,
+body:not(:has(.home-page)) .insight-index-heading .eyebrow,
+body:not(:has(.home-page)) .article-hero .eyebrow {
+  color: #8fc3ff;
+}
+
+body:not(:has(.home-page)) .about-intro,
+body:not(:has(.home-page)) .about-values,
+body:not(:has(.home-page)) .about-experience,
+body:not(:has(.home-page)) .contact-main,
+body:not(:has(.home-page)) .contact-reassurance,
+body:not(:has(.home-page)) .industry-index,
+body:not(:has(.home-page)) .industry-context,
+body:not(:has(.home-page)) .industry-pressures,
+body:not(:has(.home-page)) .industry-outcomes,
+body:not(:has(.home-page)) .service-index,
+body:not(:has(.home-page)) .service-choice,
+body:not(:has(.home-page)) .service-problem,
+body:not(:has(.home-page)) .service-capabilities,
+body:not(:has(.home-page)) .service-toolkit,
+body:not(:has(.home-page)) .service-frameworks,
+body:not(:has(.home-page)) .service-delivery-path,
+body:not(:has(.home-page)) .service-delivery,
+body:not(:has(.home-page)) .service-outcomes,
+body:not(:has(.home-page)) .service-faq,
+body:not(:has(.home-page)) .related-services,
+body:not(:has(.home-page)) .related-industries,
+body:not(:has(.home-page)) .insight-index,
+body:not(:has(.home-page)) .insight-topic-band,
+body:not(:has(.home-page)) .article-body,
+body:not(:has(.home-page)) .related-insights {
+  background: #091522;
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .about-intro h2,
+body:not(:has(.home-page)) .about-values h2,
+body:not(:has(.home-page)) .about-experience h2,
+body:not(:has(.home-page)) .contact-main h2,
+body:not(:has(.home-page)) .contact-reassurance h2,
+body:not(:has(.home-page)) .industry-index h2,
+body:not(:has(.home-page)) .industry-context h2,
+body:not(:has(.home-page)) .industry-pressures h2,
+body:not(:has(.home-page)) .industry-outcomes h2,
+body:not(:has(.home-page)) .service-index h2,
+body:not(:has(.home-page)) .service-choice h2,
+body:not(:has(.home-page)) .service-problem h2,
+body:not(:has(.home-page)) .service-capabilities h2,
+body:not(:has(.home-page)) .service-toolkit h2,
+body:not(:has(.home-page)) .service-frameworks h2,
+body:not(:has(.home-page)) .service-delivery-path h2,
+body:not(:has(.home-page)) .service-delivery h2,
+body:not(:has(.home-page)) .service-outcomes h2,
+body:not(:has(.home-page)) .service-faq h2,
+body:not(:has(.home-page)) .related-services h2,
+body:not(:has(.home-page)) .related-industries h2,
+body:not(:has(.home-page)) .insight-index h2,
+body:not(:has(.home-page)) .article-body h2,
+body:not(:has(.home-page)) .related-insights h2 {
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .editorial-split > div:last-child p,
+body:not(:has(.home-page)) .industry-index-intro > p:last-child,
+body:not(:has(.home-page)) .industry-services-grid > div > p:last-child,
+body:not(:has(.home-page)) .service-index-intro > p:last-child,
+body:not(:has(.home-page)) .service-problem-grid p,
+body:not(:has(.home-page)) .service-capability-grid p,
+body:not(:has(.home-page)) .service-delivery-grid > div > p:last-child,
+body:not(:has(.home-page)) .service-tool-note,
+body:not(:has(.home-page)) .insight-feature > div > p,
+body:not(:has(.home-page)) .article-content p,
+body:not(:has(.home-page)) .article-content li,
+body:not(:has(.home-page)) .reassurance-grid p {
+  color: #b7c6d3;
+}
+
+body:not(:has(.home-page)) .value-grid,
+body:not(:has(.home-page)) .value-grid article,
+body:not(:has(.home-page)) .reassurance-grid,
+body:not(:has(.home-page)) .reassurance-grid article,
+body:not(:has(.home-page)) .industry-index-card,
+body:not(:has(.home-page)) .pressure-grid article,
+body:not(:has(.home-page)) .outcome-cards article,
+body:not(:has(.home-page)) .service-index-card,
+body:not(:has(.home-page)) .service-capability-grid article,
+body:not(:has(.home-page)) .service-framework-card,
+body:not(:has(.home-page)) .tool-group,
+body:not(:has(.home-page)) .delivery-stage,
+body:not(:has(.home-page)) .related-service-grid a,
+body:not(:has(.home-page)) .related-industry-grid a,
+body:not(:has(.home-page)) .related-insight-grid a,
+body:not(:has(.home-page)) .insight-feature,
+body:not(:has(.home-page)) .article-takeaways,
+body:not(:has(.home-page)) .article-disclaimer {
+  border-color: #304a61;
+  background: #12273b;
+}
+
+body:not(:has(.home-page)) .industry-index-card h2,
+body:not(:has(.home-page)) .industry-index-card p,
+body:not(:has(.home-page)) .service-index-card h2,
+body:not(:has(.home-page)) .service-index-card p,
+body:not(:has(.home-page)) .pressure-grid article h3,
+body:not(:has(.home-page)) .outcome-cards article h3,
+body:not(:has(.home-page)) .service-capability-grid article h3,
+body:not(:has(.home-page)) .service-framework-card h3,
+body:not(:has(.home-page)) .tool-group h3,
+body:not(:has(.home-page)) .delivery-stage h3,
+body:not(:has(.home-page)) .insight-feature h2,
+body:not(:has(.home-page)) .related-service-grid a,
+body:not(:has(.home-page)) .related-industry-grid a,
+body:not(:has(.home-page)) .related-insight-grid a {
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .industry-index-card p,
+body:not(:has(.home-page)) .service-index-card p,
+body:not(:has(.home-page)) .pressure-grid article p,
+body:not(:has(.home-page)) .outcome-cards article p,
+body:not(:has(.home-page)) .service-capability-grid article p,
+body:not(:has(.home-page)) .service-framework-card p,
+body:not(:has(.home-page)) .delivery-stage p {
+  color: #b7c6d3;
+}
+
+body:not(:has(.home-page)) .contact-form {
+  border-color: #304a61;
+  background: #12273b;
+  color: #edf4fa;
+  box-shadow: 0 20px 55px #00000022;
+}
+
+body:not(:has(.home-page)) .form-heading > p:last-child,
+body:not(:has(.home-page)) .form-submit p {
+  color: #b7c6d3;
+}
+
+body:not(:has(.home-page)) .form-grid input,
+body:not(:has(.home-page)) .form-grid select,
+body:not(:has(.home-page)) .form-grid textarea {
+  border-color: #49657d;
+  background: #0e2031;
+  color: #ffffff;
+}
+
+body:not(:has(.home-page)) .form-grid input::placeholder,
+body:not(:has(.home-page)) .form-grid textarea::placeholder {
+  color: #9db0c0;
+}
+
+body:not(:has(.home-page)) .menu-toggle {
+  border-color: #3d5a73;
+  background: #12273b;
+}
+
+body:not(:has(.home-page)) .menu-toggle span {
+  background: #edf4fa;
+}
+
+body:not(:has(.home-page)) .article-content h2,
+body:not(:has(.home-page)) .article-section-label,
+body:not(:has(.home-page)) .article-opening {
+  color: #edf4fa;
+}
+
+body:not(:has(.home-page)) .case-study-hero .eyebrow,
+body:not(:has(.home-page)) .case-study-detail .eyebrow {
+  color: #8fc3ff;
+}
+
+@media (max-width: 900px) {
+  body:not(:has(.home-page)) .main-nav {
+    background: #0d1d2d;
+    border-color: #29445d;
+    box-shadow: 0 18px 35px #00000032;
+  }
+
+  body:not(:has(.home-page)) .main-nav > a,
+  body:not(:has(.home-page)) .services-nav > button {
+    color: #edf4fa;
+    border-bottom-color: #304a61;
+  }
+
+  body:not(:has(.home-page)) .services-menu {
+    background: #12273b;
+    color: #edf4fa;
+    border-color: #304a61;
+  }
+}
+
+/* Final contrast guard for the dark homepage sections. The platform heading
+   previously retained the legacy near-black heading colour after its section
+   background was changed to navy. */
+.home-page .platforms h2 {
+  color: #edf4fa;
+}
+
+.home-page .platforms .eyebrow {
+  color: #8fc3ff;
+}
+
+.home-page .platforms .platform-ecosystem article {
+  color: #edf4fa;
 }

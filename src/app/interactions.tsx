@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 const serviceLinks = [
   ["Managed IT Support", "managed-it-support"],
@@ -34,8 +35,22 @@ export function SiteHeader() {
             aria-label="Coretix Ltd home"
             onClick={closeMobile}
           >
-            <b>CORETIX</b>
-            <span>LTD</span>
+            <Image
+              className="site-logo site-logo-dark"
+              src="/images/brand/coretix-logo.png"
+              alt="Coretix Ltd"
+              width={1800}
+              height={295}
+              priority
+            />
+            <Image
+              className="site-logo site-logo-light"
+              src="/images/brand/coretix-logo-light.png"
+              alt=""
+              width={1800}
+              height={295}
+              priority
+            />
           </Link>
           <nav
             id="primary-navigation"

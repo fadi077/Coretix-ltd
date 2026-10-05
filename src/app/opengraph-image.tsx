@@ -1,4 +1,10 @@
 import { ImageResponse } from "next/og";
+import { readFileSync } from "node:fs";
+import path from "node:path";
+
+const logoSrc = `data:image/png;base64,${readFileSync(
+  path.join(process.cwd(), "public/images/brand/coretix-logo-light.png"),
+).toString("base64")}`;
 
 export const alt = "Coretix Ltd | Managed IT support and technology services";
 export const size = { width: 1200, height: 630 };
@@ -30,19 +36,17 @@ export default function OpenGraphImage() {
           }}
         >
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", width: "70%" }}>
-            <div
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="Coretix Ltd"
+              src={logoSrc}
               style={{
-                alignItems: "center",
-                color: "#ffffff",
-                display: "flex",
-                fontSize: 32,
-                fontWeight: 800,
-                letterSpacing: -1,
+                height: 42,
+                objectFit: "contain",
+                objectPosition: "left center",
+                width: 255,
               }}
-            >
-              <span style={{ color: "#8bbdff", marginRight: 14 }}>CORETIX</span>
-              <span style={{ color: "#c7d2de", fontSize: 13, letterSpacing: 4 }}>LTD</span>
-            </div>
+            />
             <div style={{ display: "flex", flexDirection: "column", maxWidth: 720 }}>
               <span
                 style={{

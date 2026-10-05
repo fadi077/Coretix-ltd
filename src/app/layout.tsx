@@ -45,9 +45,19 @@ export const metadata: Metadata = {
   referrer: "origin-when-cross-origin",
   formatDetection: { telephone: false, email: false, address: false },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    icon: [
+      {
+        url: "/images/brand/coretix-icon.png",
+        type: "image/png",
+        sizes: "512x512",
+      },
+    ],
+    shortcut: "/images/brand/coretix-icon.png",
+    apple: {
+      url: "/images/brand/coretix-icon.png",
+      type: "image/png",
+      sizes: "512x512",
+    },
   },
   manifest: "/manifest.webmanifest",
   verification: {
@@ -81,7 +91,7 @@ const knowledgeGraph = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: SITE_URL,
-      logo: absoluteUrl("/icon.svg"),
+      logo: absoluteUrl("/images/brand/coretix-logo.png"),
       email: "info@coreit-x.com",
       contactPoint: {
         "@type": "ContactPoint",
