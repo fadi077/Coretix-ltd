@@ -5370,6 +5370,20 @@ body:has(.home-page) .nav-cta:hover {
   border-color: #304a61;
 }
 
+.home-page .human .ink-button {
+  background: #1674ea;
+  border: 1px solid #8fc3ff;
+  color: #ffffff;
+  box-shadow: 0 12px 26px #06111d66;
+}
+
+.home-page .human .ink-button:hover,
+.home-page .human .ink-button:focus-visible {
+  background: #2f89f6;
+  border-color: #c7e2ff;
+  color: #ffffff;
+}
+
 .home-page .industries {
   background: #0a1827;
 }
