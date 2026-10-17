@@ -116,7 +116,6 @@ export default function Home() {
           <div className="container hero-topline">
             <p className="hero-category">Technology</p>
             <p className="hero-positioning">
-              <i aria-hidden="true" />
               <strong>Managed IT.</strong>
               <span>Without unnecessary complexity.</span>
             </p>

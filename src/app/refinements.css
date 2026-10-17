@@ -6081,3 +6081,9 @@ body:not(:has(.home-page)) .case-study-detail .eyebrow {
 .home-page .platforms .platform-ecosystem article {
   color: #edf4fa;
 }
+
+/* Keep section labels free of decorative leading dashes on every page. */
+#main .eyebrow::before {
+  content: none;
+  display: none;
+}
