@@ -5326,6 +5326,7 @@ body:has(.home-page) .nav-cta:hover {
 
 .home-page .case-teaser {
   display: block;
+  min-height: 0;
   border: 1px solid #2c465d;
   background: #10273b;
   box-shadow: 0 24px 65px #00000028;
@@ -6086,4 +6087,201 @@ body:not(:has(.home-page)) .case-study-detail .eyebrow {
 #main .eyebrow::before {
   content: none;
   display: none;
+}
+
+/* Shared rhythm and contrast corrections from the live desktop/mobile audit. */
+#main > .section,
+#main > .service-delivery,
+#main > .related-services,
+#main > .related-industries,
+#main > .related-insights,
+#main > .final-cta {
+  padding-block: clamp(48px, 5vw, 72px);
+}
+
+#main :is(.service-problem-grid, .service-capability-grid, .service-tool-grid,
+  .service-framework-grid, .delivery-stage-grid, .service-outcome-grid,
+  .service-grid, .article-grid, .industry-panels) {
+  margin-top: 32px;
+}
+
+#main :is(.service-problem-grid article, .service-framework-card,
+  .delivery-stage, .service-outcome-grid article) {
+  min-height: 0;
+  padding: 26px;
+}
+
+#main :is(.service-problem-grid i, .tool-group-number,
+  .service-framework-card > span, .delivery-stage > span,
+  .service-outcome-grid i) {
+  margin-bottom: 24px;
+}
+
+#main .tool-group p {
+  min-height: 0;
+  color: #b7c6d3;
+}
+
+#main .service-framework-intro {
+  gap: 24px 48px;
+}
+
+#main .service-framework-intro .eyebrow {
+  margin-bottom: 0;
+}
+
+#main .service-index-intro,
+#main .industry-index-intro {
+  row-gap: 24px;
+}
+
+#main .service-index-card {
+  min-height: 0;
+}
+
+#main .service-index-card .service-visual {
+  margin-bottom: 24px;
+}
+
+#main .service-index-card > span {
+  margin-top: 24px;
+  padding-top: 18px;
+}
+
+/* Let the technical diagram grow with wrapped labels on narrow screens. */
+#main .service-system-visual {
+  min-height: 0;
+}
+
+#main .system-framework-rail {
+  position: relative;
+  inset: auto;
+  margin-top: 24px;
+}
+
+#main .system-tool-map span {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+#main .eyebrow,
+#main .text-link,
+#main .service-index-card small,
+#main .industry-index-card small,
+#main .related-insight-grid small {
+  color: #8fc3ff;
+}
+
+#main .eyebrow.green {
+  color: #72d49b;
+}
+
+#main .split-heading > p,
+#main .faq-grid > div:first-child > p:last-child,
+#main .service-qualification,
+#main .industry-disclaimer,
+#main .framework-qualification,
+#main .article-body > aside nav a,
+#main .form-grid label span {
+  color: #b7c6d3;
+}
+
+#main .button:is(.primary, .case-button, .ink-button) {
+  background: #1066cf;
+  color: #ffffff;
+  border-color: #8fc3ff;
+}
+
+#main .button:is(.primary, .case-button, .ink-button):is(:hover, :focus-visible) {
+  background: #146dd8;
+  color: #ffffff;
+}
+
+#main .contact-callout {
+  background: #1066cf;
+  color: #ffffff;
+}
+
+#main .case-study-summary {
+  background: #0e2031;
+  color: #edf4fa;
+}
+
+#main .case-study-summary h2 {
+  color: #edf4fa;
+}
+
+#main .case-study-summary-grid > div > p:last-child,
+#main .case-study-metrics span {
+  color: #b7c6d3;
+}
+
+#main .case-study-metrics strong {
+  color: #8fc3ff;
+}
+
+#main .case-study-metrics,
+#main .case-study-metrics > div + div {
+  border-color: #49657d;
+}
+
+/* The generic input width previously overrode the clipped spam-trap field. */
+.form-grid {
+  position: relative;
+  min-width: 0;
+}
+
+#main .form-grid .form-trap {
+  inset: 0 auto auto 0;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* Keep in-page destinations below the sticky navigation. */
+#main :is(section[id], form[id], aside[id]) {
+  scroll-margin-top: 110px;
+}
+
+@media (max-width: 900px) {
+  #main :is(.split-heading, .service-framework-intro, .service-path-heading,
+    .service-capability-heading, .faq-grid, .editorial-split,
+    .service-delivery-grid, .cta-grid) {
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  #main > .section,
+  #main > .service-delivery,
+  #main > .related-services,
+  #main > .related-industries,
+  #main > .related-insights,
+  #main > .final-cta {
+    padding-block: 40px;
+  }
+
+  #main :is(.service-problem-grid, .service-capability-grid, .service-tool-grid,
+    .service-framework-grid, .delivery-stage-grid, .service-outcome-grid,
+    .service-grid, .article-grid, .industry-panels) {
+    margin-top: 24px;
+  }
+
+  #main .case-teaser .case-content {
+    padding: 28px 22px;
+  }
+
+  #main :is(section[id], form[id], aside[id]) {
+    scroll-margin-top: 96px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

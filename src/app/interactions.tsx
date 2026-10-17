@@ -17,6 +17,7 @@ export function SiteHeader() {
   const [mobile, setMobile] = useState(false),
     [services, setServices] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const close = (e: MouseEvent) => {
       if (!ref.current?.contains(e.target as Node)) setServices(false);
@@ -24,7 +25,24 @@ export function SiteHeader() {
     document.addEventListener("mousedown", close);
     return () => document.removeEventListener("mousedown", close);
   }, []);
-  const closeMobile = () => setMobile(false);
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      if (services) {
+        setServices(false);
+        ref.current?.querySelector("button")?.focus();
+      } else if (mobile) {
+        setMobile(false);
+        menuToggleRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [mobile, services]);
+  const closeMobile = () => {
+    setMobile(false);
+    setServices(false);
+  };
   return (
     <header>
       <div className="nav-wrap">
@@ -133,6 +151,7 @@ export function SiteHeader() {
             </Link>
           </nav>
           <button
+            ref={menuToggleRef}
             className="menu-toggle"
             aria-expanded={mobile}
             aria-controls="primary-navigation"
